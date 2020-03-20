@@ -1,0 +1,116 @@
+\documentclass[12pt,a4paper,titlepage]{article}
+\title{Implementazione dell'algoritmo di One-Sided Jacobi Rotation per la decomposizione SVD, tramite librerie NVIDIA CUDA C (codice C) su piattaforma embedded Jetson TK1 (GPU).} 
+\author{Matteo Orlandini \& Jacopo Pagliuca}
+\date{}
+
+\usepackage[english, italian ]{babel} %the last declared language is the one used in the document
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{listings}
+%inizio impostazioni bibliografia
+\usepackage[autostyle,italian=guillemets]{csquotes} 
+%autostyle adatta lo stile delle citazioni alla lingua corrente del documento;
+%italian=guillemets racchiude automaticamente tra virgolette caporali
+%i campi che prevedono le virgolette;
+\usepackage[backend=biber, style=numeric, citestyle=numeric,maxcitenames=99,maxbibnames = 99]{biblatex}
+%backend=biber dice a biblatex che s’intende usare Biber come motore bibliografico
+%style:numeric Anno di pubblicazione: in fondo al riferimento.
+%citestyle=numeric Riferimento: numerico ([1], [2], eccetera).
+%fine impostazioni bibliografia
+
+\usepackage{float}
+\usepackage{hyperref}
+\hypersetup{
+	bookmarks=true,         % show bookmarks bar?
+	unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+	pdftoolbar=true,        % show Acrobat’s toolbar?
+	pdfmenubar=true,        % show Acrobat’s menu?
+	pdffitwindow=false,     % window fit to page when opened
+	pdfstartview={FitH},    % fits the width of the page to the window
+	%pdftitle={Relazione di Reti di Sensori Wireless per IOT},    % title
+	pdfauthor={Matteo Orlandini},     % author
+	pdfsubject={Implementazione dell'algoritmo di One-Sided Jacobi Rotation per la decomposizione SVD, tramite librerie NVIDIA CUDA C (codice C) su piattaforma embedded Jetson TK1 (GPU)},   % subject of the document
+	pdfcreator={Matteo Orlandini},   % creator of the document
+	%pdfproducer={Producer}, % producer of the document
+	pdfpagemode={UseOutlines},
+	%bookmarksopen,
+	pdfstartview={FitH},
+	colorlinks=true,       % false: boxed links; true: colored links
+	linkcolor={red},
+	citecolor={green},
+	urlcolor={cyan}
+} 
+
+\addbibresource{Bibliografia.bib}
+
+\begin{document}
+
+\begin{titlepage}
+	
+	\centering
+	\includegraphics[width=.2\textwidth]{Immagini/univpmlogo}\par\vspace{1cm}
+	{\scshape\LARGE Università Politecnica delle Marche\par}
+	\vspace{1cm}
+	{\scshape\Large Sistemi Embedded\par}
+	\vspace{1.5cm}
+	{\huge\bfseries Implementazione dell'algoritmo di One-Sided Jacobi Rotation per la decomposizione SVD, tramite librerie NVIDIA CUDA C (codice C) su piattaforma embedded Jetson TK1 (GPU). \par}
+	\vspace{2cm}
+	{\Large\itshape Matteo Orlandini \par}
+	{\Large\itshape Jacopo Pagliuca\par}
+	\vfill
+	supervisionato da\par
+	Dott. Laura \textsc{Falaschetti} e Prof. Claudio \textsc{Turchetti}
+	
+	\vfill
+	
+	% Bottom of the page
+	{\large \today\par}
+\end{titlepage}
+
+\section{Introduzione}
+\input {Section/Introduzione}
+
+\subsection{SVD}
+\input {Subsection/SVD}
+
+\subsection{One Sided Jacobi SVD}
+\input {Subsection/One_Sided_Jacobi}
+
+\subsection{CUDA}
+\input {Subsection/CUDA}
+
+\newpage
+\section{Sequential implementation}
+\input {Section/Sequential}
+
+\newpage
+\section{Parallel implementation}
+\input {Section/Parallel}
+
+\subsection{Global Memory}
+\input {Subsection/Global_Memory}
+
+\subsection{Semi Shared Memory}
+\input {Subsection/Semi_Shared_Memory}	
+
+\subsection{Shared Memory}
+\input {Subsection/Shared_Memory}
+
+\newpage
+\section{Performance}
+\input{Section/Performance}
+
+\newpage
+\section{Conclusioni}
+\input{Section/Conclusioni}
+
+\newpage
+
+\nocite{*}
+%Il comando \printbibliography produce la sezione bibliografica con relativi
+%titolo e testatina. Per mandarne il relativo titolo nell’indice generale si
+%usa l’istruzione:
+\printbibliography
+
+\end{document} 

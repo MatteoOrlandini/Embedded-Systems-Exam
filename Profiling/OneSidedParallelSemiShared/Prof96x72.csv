@@ -1,0 +1,32 @@
+==7621== NVPROF is profiling process 7621, command: ./OneSidedJacobiParallelSemiShared A96x72
+==7621== Warning: Unified Memory Profiling is not supported on devices of compute capability less than 3.0
+==7621== Profiling application: ./OneSidedJacobiParallelSemiShared A96x72
+==7621== Profiling result:
+"Time(%)","Time","Calls","Avg","Min","Max","Name"
+%,ms,,us,us,us,
+91.682266,57.883591,576,100.492000,94.374000,108.728000,"round(float*, int*, int*, int, int, bool*)"
+8.108046,5.119014,576,8.887000,8.802000,10.659000,"scheduling(int*, int*, int)"
+0.127427,0.080451,1,80.451000,80.451000,80.451000,"computeSingVals(float*, float*, int, int)"
+0.045464,0.028704,9,3.189000,3.040000,3.488000,"[CUDA memcpy DtoH]"
+0.036797,0.023232,11,2.112000,0.672000,8.192000,"[CUDA memcpy HtoD]"
+
+==7621== API calls:
+"Time(%)","Time","Calls","Avg","Min","Max","Name"
+%,ms,,ms,ms,ms,
+40.340881,60.945030,20,3.047251,0.008369,9.061459,"cudaMemcpy"
+31.021632,46.865964,4,11.716491,0.000911,46.859179,"cudaEventCreate"
+22.318030,33.716988,1,33.716988,33.716988,33.716988,"cudaDeviceReset"
+4.858479,7.339953,1153,0.006365,0.005513,0.024485,"cudaLaunch"
+0.619188,0.935439,5188,0.000180,0.000141,0.009213,"cudaSetupArgument"
+0.220851,0.333651,1153,0.000289,0.000228,0.008897,"cudaConfigureCall"
+0.182517,0.275737,91,0.003030,0.000157,0.115891,"cuDeviceGetAttribute"
+0.174319,0.263353,5,0.052670,0.005864,0.132809,"cudaMalloc"
+0.154809,0.233878,5,0.046775,0.006124,0.141888,"cudaFree"
+0.034500,0.052121,2,0.026060,0.006956,0.045165,"cudaEventSynchronize"
+0.034456,0.052054,1,0.052054,0.052054,0.052054,"cuDeviceTotalMem"
+0.019699,0.029761,1,0.029761,0.029761,0.029761,"cuDeviceGetName"
+0.014426,0.021794,4,0.005448,0.002903,0.007301,"cudaEventRecord"
+0.002595,0.003920,2,0.001960,0.001944,0.001976,"cudaEventElapsedTime"
+0.001603,0.002421,2,0.001210,0.000793,0.001628,"cudaEventDestroy"
+0.001403,0.002119,3,0.000706,0.000212,0.001591,"cuDeviceGetCount"
+0.000612,0.000925,3,0.000308,0.000157,0.000535,"cuDeviceGet"

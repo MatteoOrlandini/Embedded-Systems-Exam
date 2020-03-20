@@ -1,0 +1,17 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'Relazione.blg'
+[105] biber:322> INFO - === mer mar  4, 2020, 22:41:58
+[124] Biber.pm:415> INFO - Reading 'Relazione.bcf'
+[238] Biber.pm:940> INFO - Using all citekeys in bib section 0
+[258] Biber.pm:4256> INFO - Processing section 0
+[258] Utils.pm:75> INFO - Globbing data source 'Bibliografia.bib'
+[258] Utils.pm:91> INFO - Globbed data source 'Bibliografia.bib' to Bibliografia.bib
+[271] Biber.pm:4455> INFO - Looking for bibtex format file 'Bibliografia.bib' for section 0
+[272] bibtex.pm:1653> INFO - LaTeX decoding ...
+[282] bibtex.pm:1471> INFO - Found BibTeX data source 'Bibliografia.bib'
+[374] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[374] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[374] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'it-IT'
+[374] Biber.pm:4090> INFO - No sort tailoring available for locale 'it-IT'
+[384] bbl.pm:652> INFO - Writing 'Relazione.bbl' with encoding 'UTF-8'
+[389] bbl.pm:755> INFO - Output to Relazione.bbl

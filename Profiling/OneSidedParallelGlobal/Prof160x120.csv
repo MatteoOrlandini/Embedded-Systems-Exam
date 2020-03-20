@@ -1,0 +1,32 @@
+==7575== NVPROF is profiling process 7575, command: ./OneSidedJacobiParallelGlobal A160x120
+==7575== Warning: Unified Memory Profiling is not supported on devices of compute capability less than 3.0
+==7575== Profiling application: ./OneSidedJacobiParallelGlobal A160x120
+==7575== Profiling result:
+"Time(%)","Time","Calls","Avg","Min","Max","Name"
+%,ms,,us,us,us,
+94.981749,374.052293,1080,346.344000,333.088000,363.786000,"round(float*, int*, int*, int, int, bool*)"
+4.925393,19.396934,1080,17.960000,17.466000,18.603000,"scheduling(int*, int*, int)"
+0.075672,0.298008,1,298.008000,298.008000,298.008000,"computeSingVals(float*, float*, int, int)"
+0.009117,0.035904,12,2.992000,0.672000,16.672000,"[CUDA memcpy HtoD]"
+0.008069,0.031776,10,3.177000,3.040000,3.488000,"[CUDA memcpy DtoH]"
+
+==7575== API calls:
+"Time(%)","Time","Calls","Avg","Min","Max","Name"
+%,ms,,ms,ms,ms,
+81.444571,389.819580,22,17.719071,0.008562,47.456862,"cudaMemcpy"
+9.688155,46.370585,4,11.592646,0.000845,46.365539,"cudaEventCreate"
+5.416387,25.924548,1,25.924548,25.924548,25.924548,"cudaDeviceReset"
+2.711317,12.977225,2161,0.006005,0.005455,0.032341,"cudaLaunch"
+0.391309,1.872931,9724,0.000192,0.000172,0.008721,"cudaSetupArgument"
+0.143498,0.686826,2161,0.000317,0.000284,0.009410,"cudaConfigureCall"
+0.062246,0.297931,5,0.059586,0.005899,0.159504,"cudaMalloc"
+0.052044,0.249097,5,0.049819,0.006776,0.145308,"cudaFree"
+0.051912,0.248466,91,0.002730,0.000144,0.105011,"cuDeviceGetAttribute"
+0.012326,0.058995,1,0.058995,0.058995,0.058995,"cuDeviceTotalMem"
+0.010744,0.051425,2,0.025712,0.007130,0.044295,"cudaEventSynchronize"
+0.008178,0.039142,1,0.039142,0.039142,0.039142,"cuDeviceGetName"
+0.005272,0.025235,4,0.006308,0.002938,0.010772,"cudaEventRecord"
+0.000871,0.004170,2,0.002085,0.001986,0.002184,"cudaEventElapsedTime"
+0.000598,0.002860,2,0.001430,0.000797,0.002063,"cudaEventDestroy"
+0.000412,0.001971,3,0.000657,0.000198,0.001390,"cuDeviceGetCount"
+0.000161,0.000771,3,0.000257,0.000164,0.000319,"cuDeviceGet"

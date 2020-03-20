@@ -1,0 +1,20 @@
+--- General Information for device 0 ---
+Name: GK20A
+Compute capability: 3.2
+Clock rate: 852 [MHz]
+Device copy overlap: Enabled
+Kernel execition timeout: Disabled
+--- Memory Information for device 0 ---
+Total global mem: 1984385024 [bytes]
+Total constant Mem: 65536 [bytes]
+Maximum pitch allowed by memory copies: 2147483647 [bytes]
+Texture Alignment: 512
+--- MP Information for device 0 ---
+Multiprocessor count: 1
+Shared memory available per block: 49152 [bytes]
+32-bit registers available per block: 32768
+Warp size: 32 [threads]
+Maximum number of threads per block: 1024
+Maximum size of each dimension of a block: (1024, 1024, 64)
+Maximum size of each dimension of a grid: (2147483647, 65535, 65535)
+

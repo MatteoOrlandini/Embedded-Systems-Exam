@@ -1,0 +1,32 @@
+==7632== NVPROF is profiling process 7632, command: ./OneSidedJacobiParallelSemiShared A128x96
+==7632== Warning: Unified Memory Profiling is not supported on devices of compute capability less than 3.0
+==7632== Profiling application: ./OneSidedJacobiParallelSemiShared A128x96
+==7632== Profiling result:
+"Time(%)","Time","Calls","Avg","Min","Max","Name"
+%,ms,,us,us,us,
+93.652011,137.423962,768,178.937000,170.353000,190.276000,"round(float*, int*, int*, int, int, bool*)"
+6.204475,9.104381,768,11.854000,11.621000,13.418000,"scheduling(int*, int*, int)"
+0.104325,0.153086,1,153.086000,153.086000,153.086000,"computeSingVals(float*, float*, int, int)"
+0.019758,0.028992,11,2.635000,0.672000,13.920000,"[CUDA memcpy HtoD]"
+0.019430,0.028512,9,3.168000,2.848000,3.488000,"[CUDA memcpy DtoH]"
+
+==7632== API calls:
+"Time(%)","Time","Calls","Avg","Min","Max","Name"
+%,ms,,ms,ms,ms,
+61.121034,142.502192,20,7.125109,0.008566,21.133385,"cudaMemcpy"
+19.880922,46.351883,4,11.587970,0.000825,46.347375,"cudaEventCreate"
+13.820361,32.221833,1,32.221833,32.221833,32.221833,"cudaDeviceReset"
+4.085504,9.525253,1537,0.006197,0.005640,0.022459,"cudaLaunch"
+0.502425,1.171391,6916,0.000169,0.000142,0.009112,"cudaSetupArgument"
+0.184083,0.429184,1537,0.000279,0.000244,0.001577,"cudaConfigureCall"
+0.122903,0.286546,5,0.057309,0.005780,0.148139,"cudaMalloc"
+0.116467,0.271540,91,0.002983,0.000152,0.122524,"cuDeviceGetAttribute"
+0.095582,0.222846,5,0.044569,0.007273,0.119350,"cudaFree"
+0.022368,0.052151,2,0.026075,0.007345,0.044806,"cudaEventSynchronize"
+0.021935,0.051141,1,0.051141,0.051141,0.051141,"cuDeviceTotalMem"
+0.012638,0.029466,1,0.029466,0.029466,0.029466,"cuDeviceGetName"
+0.009637,0.022469,4,0.005617,0.003053,0.008081,"cudaEventRecord"
+0.001778,0.004146,2,0.002073,0.002012,0.002134,"cudaEventElapsedTime"
+0.001115,0.002600,2,0.001300,0.000751,0.001849,"cudaEventDestroy"
+0.000918,0.002141,3,0.000713,0.000157,0.001678,"cuDeviceGetCount"
+0.000329,0.000767,3,0.000255,0.000153,0.000350,"cuDeviceGet"

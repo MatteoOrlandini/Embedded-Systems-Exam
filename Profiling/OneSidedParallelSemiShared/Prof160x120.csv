@@ -1,0 +1,32 @@
+==7643== NVPROF is profiling process 7643, command: ./OneSidedJacobiParallelSemiShared A160x120
+==7643== Warning: Unified Memory Profiling is not supported on devices of compute capability less than 3.0
+==7643== Profiling application: ./OneSidedJacobiParallelSemiShared A160x120
+==7643== Profiling result:
+"Time(%)","Time","Calls","Avg","Min","Max","Name"
+%,ms,,us,us,us,
+94.968265,327.346428,1080,303.098000,292.941000,317.889000,"round(float*, int*, int*, int, int, bool*)"
+4.937920,17.020533,1080,15.759000,15.657000,16.367000,"scheduling(int*, int*, int)"
+0.074700,0.257482,1,257.482000,257.482000,257.482000,"computeSingVals(float*, float*, int, int)"
+0.009766,0.033664,12,2.805000,0.672000,16.576000,"[CUDA memcpy HtoD]"
+0.009349,0.032224,10,3.222000,3.040000,3.904000,"[CUDA memcpy DtoH]"
+
+==7643== API calls:
+"Time(%)","Time","Calls","Avg","Min","Max","Name"
+%,ms,,ms,ms,ms,
+78.338812,349.167297,22,15.871240,0.008945,45.268988,"cudaMemcpy"
+10.333478,46.057790,4,11.514447,0.000797,46.052563,"cudaEventCreate"
+7.569526,33.738463,1,33.738463,33.738463,33.738463,"cudaDeviceReset"
+2.998291,13.363812,2161,0.006184,0.005471,0.029379,"cudaLaunch"
+0.374921,1.671078,9724,0.000171,0.000141,0.009166,"cudaSetupArgument"
+0.141925,0.632578,2161,0.000292,0.000250,0.009269,"cudaConfigureCall"
+0.093040,0.414692,5,0.082938,0.005393,0.213268,"cudaMalloc"
+0.056630,0.252409,91,0.002773,0.000165,0.106203,"cuDeviceGetAttribute"
+0.051737,0.230598,5,0.046119,0.006373,0.138327,"cudaFree"
+0.013550,0.060395,1,0.060395,0.060395,0.060395,"cuDeviceTotalMem"
+0.011566,0.051553,2,0.025776,0.007169,0.044384,"cudaEventSynchronize"
+0.007560,0.033696,4,0.008424,0.002787,0.019282,"cudaEventRecord"
+0.006659,0.029681,1,0.029681,0.029681,0.029681,"cuDeviceGetName"
+0.001042,0.004645,2,0.002322,0.002293,0.002352,"cudaEventElapsedTime"
+0.000638,0.002843,2,0.001421,0.000787,0.002056,"cudaEventDestroy"
+0.000446,0.001988,3,0.000662,0.000159,0.001503,"cuDeviceGetCount"
+0.000179,0.000796,3,0.000265,0.000181,0.000391,"cuDeviceGet"

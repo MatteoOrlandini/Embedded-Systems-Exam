@@ -1,0 +1,27 @@
+nvprof --csv --log-file ../Profiling/OneSidedSequential/Prof32x24.csv ./OneSidedJacobiSequential A32x24
+nvprof --csv --log-file ../Profiling/OneSidedSequential/Prof48x36.csv ./OneSidedJacobiSequential A48x36
+nvprof --csv --log-file ../Profiling/OneSidedSequential/Prof96x72.csv ./OneSidedJacobiSequential A96x72
+nvprof --csv --log-file ../Profiling/OneSidedSequential/Prof128x96.csv ./OneSidedJacobiSequential A128x96
+nvprof --csv --log-file ../Profiling/OneSidedSequential/Prof160x120.csv ./OneSidedJacobiSequential A160x120
+nvprof --csv --log-file ../Profiling/OneSidedSequential/Prof200x150.csv ./OneSidedJacobiSequential A200x150
+
+nvprof --csv --log-file ../Profiling/OneSidedParallelGlobal/Prof32x24.csv ./OneSidedJacobiParallelGlobal A32x24
+nvprof --csv --log-file ../Profiling/OneSidedParallelGlobal/Prof48x36.csv ./OneSidedJacobiParallelGlobal A48x36
+nvprof --csv --log-file ../Profiling/OneSidedParallelGlobal/Prof96x72.csv ./OneSidedJacobiParallelGlobal A96x72
+nvprof --csv --log-file ../Profiling/OneSidedParallelGlobal/Prof128x96.csv ./OneSidedJacobiParallelGlobal A128x96
+nvprof --csv --log-file ../Profiling/OneSidedParallelGlobal/Prof160x120.csv ./OneSidedJacobiParallelGlobal A160x120
+nvprof --csv --log-file ../Profiling/OneSidedParallelGlobal/Prof200x150.csv ./OneSidedJacobiParallelGlobal A200x150
+
+nvprof --csv --log-file ../Profiling/OneSidedParallelSemiShared/Prof32x24.csv ./OneSidedJacobiParallelSemiShared A32x24
+nvprof --csv --log-file ../Profiling/OneSidedParallelSemiShared/Prof48x36.csv ./OneSidedJacobiParallelSemiShared A48x36
+nvprof --csv --log-file ../Profiling/OneSidedParallelSemiShared/Prof96x72.csv ./OneSidedJacobiParallelSemiShared A96x72
+nvprof --csv --log-file ../Profiling/OneSidedParallelSemiShared/Prof128x96.csv ./OneSidedJacobiParallelSemiShared A128x96
+nvprof --csv --log-file ../Profiling/OneSidedParallelSemiShared/Prof160x120.csv ./OneSidedJacobiParallelSemiShared A160x120
+nvprof --csv --log-file ../Profiling/OneSidedParallelSemiShared/Prof200x150.csv ./OneSidedJacobiParallelSemiShared A200x150
+
+nvprof --csv --log-file ../Profiling/OneSidedParallelShared/Prof32x24.csv ./OneSidedJacobiParallelShared A32x24
+nvprof --csv --log-file ../Profiling/OneSidedParallelShared/Prof48x36.csv ./OneSidedJacobiParallelGlobal A48x36
+nvprof --csv --log-file ../Profiling/OneSidedParallelShared/Prof96x72.csv ./OneSidedJacobiParallelGlobal A96x72
+nvprof --csv --log-file ../Profiling/OneSidedParallelShared/Prof128x96.csv ./OneSidedJacobiParallelGlobal A128x96
+nvprof --csv --log-file ../Profiling/OneSidedParallelShared/Prof160x120.csv ./OneSidedJacobiParallelGlobal A160x120
+nvprof --csv --log-file ../Profiling/OneSidedParallelShared/Prof200x150.csv ./OneSidedJacobiParallelGlobal A200x150

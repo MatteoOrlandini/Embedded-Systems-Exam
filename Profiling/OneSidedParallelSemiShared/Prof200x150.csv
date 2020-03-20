@@ -1,0 +1,32 @@
+==7654== NVPROF is profiling process 7654, command: ./OneSidedJacobiParallelSemiShared A200x150
+==7654== Warning: Unified Memory Profiling is not supported on devices of compute capability less than 3.0
+==7654== Profiling application: ./OneSidedJacobiParallelSemiShared A200x150
+==7654== Profiling result:
+"Time(%)","Time","Calls","Avg","Min","Max","Name"
+%,ms,,us,us,us,
+96.488254,733.825524,1350,543.574000,520.389000,566.807000,"round(float*, int*, int*, int, int, bool*)"
+3.437136,26.140572,1350,19.363000,19.181000,20.344000,"scheduling(int*, int*, int)"
+0.064651,0.491689,1,491.689000,491.689000,491.689000,"computeSingVals(float*, float*, int, int)"
+0.005222,0.039712,12,3.309000,0.672000,22.976000,"[CUDA memcpy HtoD]"
+0.004738,0.036032,10,3.603000,3.072000,4.576000,"[CUDA memcpy DtoH]"
+
+==7654== API calls:
+"Time(%)","Time","Calls","Avg","Min","Max","Name"
+%,ms,,ms,ms,ms,
+89.241436,864.502388,22,39.295563,0.008919,102.845928,"cudaMemcpy"
+4.886496,47.336618,4,11.834154,0.000825,47.331007,"cudaEventCreate"
+3.609010,34.961308,1,34.961308,34.961308,34.961308,"cudaDeviceReset"
+1.795298,17.391463,2701,0.006438,0.005554,0.336566,"cudaLaunch"
+0.220342,2.134503,12154,0.000175,0.000142,0.009687,"cudaSetupArgument"
+0.078903,0.764352,2701,0.000282,0.000225,0.010112,"cudaConfigureCall"
+0.069064,0.669041,2,0.334520,0.007116,0.661925,"cudaEventSynchronize"
+0.036644,0.354975,5,0.070995,0.006016,0.200406,"cudaMalloc"
+0.027137,0.262887,91,0.002888,0.000169,0.112823,"cuDeviceGetAttribute"
+0.022824,0.221099,5,0.044219,0.007117,0.126754,"cudaFree"
+0.005262,0.050978,1,0.050978,0.050978,0.050978,"cuDeviceTotalMem"
+0.003604,0.034916,4,0.008729,0.003062,0.019662,"cudaEventRecord"
+0.002884,0.027941,1,0.027941,0.027941,0.027941,"cuDeviceGetName"
+0.000508,0.004920,2,0.002460,0.002407,0.002513,"cudaEventElapsedTime"
+0.000298,0.002885,2,0.001442,0.000835,0.002050,"cudaEventDestroy"
+0.000216,0.002091,3,0.000697,0.000192,0.001537,"cuDeviceGetCount"
+0.000073,0.000712,3,0.000237,0.000184,0.000290,"cuDeviceGet"

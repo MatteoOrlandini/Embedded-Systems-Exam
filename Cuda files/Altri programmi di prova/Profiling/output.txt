@@ -1,0 +1,8 @@
+NV_Warning: Ignoring the invalid profiler config option: method
+# CUDA_PROFILE_LOG_VERSION 2.0
+# CUDA_DEVICE 0 GeForce 610M
+# CUDA_CONTEXT 1
+# CUDA_PROFILE_CSV 1
+# TIMESTAMPFACTOR 15f8e5ee5663ed09
+method,gputime,cputime,occupancy
+_Z10cuda_hellov,77.504,444.220,0.167

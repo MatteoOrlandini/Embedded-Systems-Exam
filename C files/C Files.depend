@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1582126342 source:d:\onedrive - università politecnica delle marche\università\magistrale\primo anno\sistemi embedded\progetto\c files\svd_one_sided_jacobi_c.c
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	<float.h>
+
+1582481651 source:d:\onedrive - università politecnica delle marche\università\magistrale\primo anno\sistemi embedded\progetto\c files\svd_main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<stdbool.h>
+	"host_functions.h"
+
+1582481830 source:d:\onedrive - università politecnica delle marche\università\magistrale\primo anno\sistemi embedded\progetto\c files\host_functions.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<stdbool.h>
+	"host_functions.h"
+
+1581601027 d:\onedrive - università politecnica delle marche\università\magistrale\primo anno\sistemi embedded\progetto\c files\host_functions.h
+
