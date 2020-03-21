@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.18)  10 MAR 2020 10:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.18)  21 MAR 2020 19:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -494,7 +494,7 @@ Package hyperref Info: Option `unicode' set `false' on input line 43.
 Package hyperref Info: Option `pdftoolbar' set `true' on input line 43.
 Package hyperref Info: Option `pdfmenubar' set `true' on input line 43.
 Package hyperref Info: Option `pdffitwindow' set `false' on input line 43.
-Package hyperref Info: Option `colorlinks' set `true' on input line 43.
+Package hyperref Info: Option `colorlinks' set `false' on input line 43.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package biblatex Info: Trying to load language 'italian'...
@@ -577,16 +577,7 @@ Package biblatex Info: ... file 'Relazione.bbl' found.
 Package biblatex Info: Reference section=0 on input line 47.
 Package biblatex Info: Reference segment=0 on input line 47.
 \AtBeginShipoutBox=\box32
-
-(c:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
-
-(c:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 147.
-)
-Package hyperref Info: Link coloring ON on input line 47.
+Package hyperref Info: Link coloring OFF on input line 47.
 
 (c:/Program Files/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -604,7 +595,7 @@ LaTeX Info: Redefining \nameref on input line 47.
 \@outlinefile=\write4
 \openout4 = `Relazione.out'.
 
-<Immagini/univpmlogo.png, id=24, 602.25pt x 602.25pt>
+<Immagini/univpmlogo.png, id=72, 602.25pt x 602.25pt>
 File: Immagini/univpmlogo.png Graphic file (type png)
 <use Immagini/univpmlogo.png>
 Package pdftex.def Info: Immagini/univpmlogo.png  used on input line 52.
@@ -614,65 +605,148 @@ Package pdftex.def Info: Immagini/univpmlogo.png  used on input line 52.
 {c:/Program Files/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <.
 /Immagini/univpmlogo.png>]
 (./Section/Introduzione.tex) (./Subsection/SVD.tex)
-(./Subsection/One_Sided_Jacobi.tex) (./Subsection/CUDA.tex)pdfTeX warning (ext4
-): destination with the same identifier (name{page.1}) has been already used, d
-uplicate ignored
+(./Subsection/One_Sided_Jacobi.tex) (./Subsection/CUDA.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
+
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.83 \newpage
-              [1] (./Section/Sequential.tex) [2] (./Section/Parallel.tex)
+l.17 	\item M
+             emoria (instruction memory e data memory) [1]
+<Immagini/CUDA/Harvard_architecture.png, id=95, 275.52937pt x 175.40532pt>
+File: Immagini/CUDA/Harvard_architecture.png Graphic file (type png)
+<use Immagini/CUDA/Harvard_architecture.png>
+Package pdftex.def Info: Immagini/CUDA/Harvard_architecture.png  used on input 
+line 23.
+(pdftex.def)             Requested size: 195.0pt x 124.14519pt.
+<Immagini/CUDA/Execution_order_sequential.png, id=98, 280.04625pt x 85.82062pt>
+
+File: Immagini/CUDA/Execution_order_sequential.png Graphic file (type png)
+<use Immagini/CUDA/Execution_order_sequential.png>
+Package pdftex.def Info: Immagini/CUDA/Execution_order_sequential.png  used on 
+input line 34.
+(pdftex.def)             Requested size: 195.0pt x 59.76103pt.
+<Immagini/CUDA/Execution_order_parallel.png, id=101, 293.59688pt x 190.46156pt>
+
+File: Immagini/CUDA/Execution_order_parallel.png Graphic file (type png)
+<use Immagini/CUDA/Execution_order_parallel.png>
+Package pdftex.def Info: Immagini/CUDA/Execution_order_parallel.png  used on in
+put line 42.
+(pdftex.def)             Requested size: 195.0pt x 126.4984pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2 <./Immagini/CUDA/Harvard_architecture.png>]
+<Immagini/CUDA/Cuda_programming_structure.png, id=112, 238.64156pt x 127.22531p
+t>
+File: Immagini/CUDA/Cuda_programming_structure.png Graphic file (type png)
+<use Immagini/CUDA/Cuda_programming_structure.png>
+Package pdftex.def Info: Immagini/CUDA/Cuda_programming_structure.png  used on 
+input line 57.
+(pdftex.def)             Requested size: 292.5pt x 155.94844pt.
+ [3 <./Immagini/CUDA/Execution_order_sequential.png> <./Immagini/CUDA/Execution
+_order_parallel.png>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 73.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 73.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 73.
+ [4 <./Immagini/CUDA/Cuda_programming_structure.png>] [5]
+<Immagini/CUDA/GPU_Memory_Structure.png, id=135, 221.32687pt x 123.46124pt>
+File: Immagini/CUDA/GPU_Memory_Structure.png Graphic file (type png)
+<use Immagini/CUDA/GPU_Memory_Structure.png>
+Package pdftex.def Info: Immagini/CUDA/GPU_Memory_Structure.png  used on input 
+line 118.
+(pdftex.def)             Requested size: 331.50238pt x 184.92952pt.
+<Immagini/CUDA/Thread_hierarchy.png, id=139, 285.31593pt x 265.74281pt>
+File: Immagini/CUDA/Thread_hierarchy.png Graphic file (type png)
+<use Immagini/CUDA/Thread_hierarchy.png>
+Package pdftex.def Info: Immagini/CUDA/Thread_hierarchy.png  used on input line
+ 129.
+(pdftex.def)             Requested size: 272.99881pt x 254.27083pt.
+ [6 <./Immagini/CUDA/GPU_Memory_Structure.png>] [7 <./Immagini/CUDA/Thread_Hier
+archy.png>] [8]
+<Immagini/CUDA/GPU_Memory_Hierarchy.png, id=159, 322.95656pt x 357.58594pt>
+File: Immagini/CUDA/GPU_Memory_Hierarchy.png Graphic file (type png)
+<use Immagini/CUDA/GPU_Memory_Hierarchy.png>
+Package pdftex.def Info: Immagini/CUDA/GPU_Memory_Hierarchy.png  used on input 
+line 190.
+(pdftex.def)             Requested size: 272.99881pt x 302.2853pt.
+ [9 <./Immagini/CUDA/GPU_Memory_Hierarchy.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
+
+ []
+
+[12]) [13] (./Section/Sequential.tex) [14] (./Section/Parallel.tex)
 (./Subsection/Global_Memory.tex) (./Subsection/Semi_Shared_Memory.tex)
-(./Subsection/Shared_Memory.tex) [3] (./Section/Performance.tex) [4]
-(./Section/Conclusioni.tex) [5]
+(./Subsection/Shared_Memory.tex) [15] (./Section/Performance.tex) [16]
+(./Section/Conclusioni.tex) [17]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
- [6]
+ [18]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
  (./Relazione.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
-
-
-Package rerunfilecheck Warning: File `Relazione.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Relazione.out':
-(rerunfilecheck)             Before: 0F057A622DEC9C19673E23B9E6F230CB;281
-(rerunfilecheck)             After:  E730782EE05FCA5C50F364956E455C40;624.
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-
+Package rerunfilecheck Info: File `Relazione.out' has not changed.
+(rerunfilecheck)             Checksum: A13268C7FF59ABD4AED6612563BA31CE;1113.
 Package logreq Info: Writing requests to 'Relazione.run.xml'.
 \openout1 = `Relazione.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 14375 strings out of 492623
- 240842 string characters out of 6126681
- 703960 words of memory out of 5000000
- 18083 multiletter control sequences out of 15000+600000
- 12733 words of font info for 27 fonts, out of 8000000 for 9000
+ 14467 strings out of 492623
+ 242945 string characters out of 6126681
+ 707165 words of memory out of 5000000
+ 18124 multiletter control sequences out of 15000+600000
+ 15947 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,5n,45p,801b,1339s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,46p,867b,1347s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Program Files/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t
-1.enc}<c:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfb
-x1440.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/cm-super
-/sfbx1728.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/cm-s
-uper/sfbx2488.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/
-cm-super/sfcc1200.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/type1/pub
-lic/cm-super/sfcc1728.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/type1
-/public/cm-super/sfcc2074.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/t
-ype1/public/cm-super/sfrm1200.pfb><c:/Program Files/texlive/2019/texmf-dist/fon
-ts/type1/public/cm-super/sfrm1440.pfb><c:/Program Files/texlive/2019/texmf-dist
-/fonts/type1/public/cm-super/sfti1200.pfb><c:/Program Files/texlive/2019/texmf-
-dist/fonts/type1/public/cm-super/sfti1728.pfb>
-Output written on Relazione.pdf (7 pages, 215105 bytes).
+1.enc}<c:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/cm-supe
+r/sfbx1200.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/cm-
+super/sfbx1440.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/type1/public
+/cm-super/sfbx1728.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/type1/pu
+blic/cm-super/sfbx2488.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/type
+1/public/cm-super/sfcc1200.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/
+type1/public/cm-super/sfcc1728.pfb><c:/Program Files/texlive/2019/texmf-dist/fo
+nts/type1/public/cm-super/sfcc2074.pfb><c:/Program Files/texlive/2019/texmf-dis
+t/fonts/type1/public/cm-super/sfrm1200.pfb><c:/Program Files/texlive/2019/texmf
+-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/Program Files/texlive/2019/t
+exmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/Program Files/texlive/20
+19/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb>
+Output written on Relazione.pdf (19 pages, 344622 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
- 25 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 275 PDF objects out of 1000 (max. 8388607)
+ 230 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 
