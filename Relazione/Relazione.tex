@@ -6,6 +6,8 @@
 \usepackage[english, italian ]{babel} %the last declared language is the one used in the document
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{listings}
 %inizio impostazioni bibliografia
@@ -42,6 +44,55 @@
 	urlcolor={cyan}
 } 
 
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listings}
+%http://latexcolor.com/
+\definecolor{ivory}{rgb}{1.0, 1.0, 0.94}
+\definecolor{lightgoldenrodyellow}{rgb}{0.98, 0.98, 0.82}
+
+\lstset{% general command to set parameter(s)
+	backgroundcolor=\color{ivory},
+	%backgroundcolor=\color{White}, % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+	basicstyle=\small,        % the size of the fonts that are used for the code
+	breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+	breaklines=true,
+	captionpos=b,                    % sets the caption-position to bottom
+	%extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+	keywordstyle=\color{Blue}\bfseries, 	% blue keywords
+	language=C,
+	classoffset=0,
+	morekeywords={bool,ifdef,ifndef,endif},
+	keywordstyle=\color{Blue}\bfseries,
+	%classoffset=1,
+	%morekeywords={},
+	%keywordstyle=\color{black}\bfseries,
+	classoffset=0,
+	identifierstyle=,           % nothing happens
+	commentstyle=\color{ForestGreen}, % green comments
+	stringstyle=\color{red},  %\ttfamily    % typewriter type for strings
+	showstringspaces=false,	% no special string spaces
+	numberbychapter=true,
+	tabsize=2,
+	columns=flexile,
+	keepspaces=flase,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	frame=lines,
+	literate=
+	{á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+	{Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+	{à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+	{À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+	{ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
+	{Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
+	{â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+	{Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+	{Ã}{{\~A}}1 {ã}{{\~a}}1 {Õ}{{\~O}}1 {õ}{{\~o}}1
+	{œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
+	{ű}{{\H{u}}}1 {Ű}{{\H{U}}}1 {ő}{{\H{o}}}1 {Ő}{{\H{O}}}1
+	{ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
+	{€}{{\euro}}1 {£}{{\pounds}}1 {«}{{\guillemotleft}}1
+	{»}{{\guillemotright}}1 {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1
+}    
+
 \addbibresource{Bibliografia.bib}
 
 \begin{document}
@@ -68,6 +119,8 @@
 	{\large \today\par}
 \end{titlepage}
 
+\tableofcontents
+
 \section{Introduzione}
 \input {Section/Introduzione}
 
@@ -75,6 +128,7 @@
 \input {Subsection/SVD}
 
 \subsection{One Sided Jacobi SVD}
+\label{sec:OneSidedJacobi}
 \input {Subsection/One_Sided_Jacobi}
 
 \subsection{CUDA}

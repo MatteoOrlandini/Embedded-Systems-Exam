@@ -2002,6 +2002,10 @@
     <bcf:citekey order="5">Cheng:ProfessionalCudaProgramming</bcf:citekey>
     <bcf:citekey order="6">Cheng:ProfessionalCudaProgramming</bcf:citekey>
     <bcf:citekey order="7">Cheng:ProfessionalCudaProgramming</bcf:citekey>
+    <bcf:citekey order="8">Acosta:SVD</bcf:citekey>
+    <bcf:citekey order="9">Romer:SVD</bcf:citekey>
+    <bcf:citekey order="10">Acosta:SVD</bcf:citekey>
+    <bcf:citekey order="11">Romer:SVD</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
