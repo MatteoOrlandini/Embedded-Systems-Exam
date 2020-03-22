@@ -1,1 +1,21 @@
-Descrizione algoritmo parallel
+%Descrizione algoritmo parallel
+%Dal capitolo PARALLELIZING THE ONE-SIDED JACOBI nell'articolo Romer
+Parallelizzare la One-Sided Jacobi implica il partizionamento di $n(n-1)/2$ coppie di colonne che devono essere ortogonali a ciascuna scansione (sweep) in gruppi di coppie di colonne indipendenti. Ogni sweep viene quindi elaborato un set alla volta, ortogonalizzando in parallelo le coppie di colonne all'interno del set corrente.
+
+Le coppie di colonne per ciascun set vengono generate utilizzando un algoritmo di pianificazione round-robin. Concettualmente, ogni round rappresenta un set e gli abbinamenti all'interno di un round corrispondono agli abbinamenti di colonne all'interno di quel set. Ad esempio, di seguito sono riportati tutti i possibili set contenenti le rispettive coppie di colonne per $n = 6$:
+\begin{center}
+	Set 1 = $\{(1,2),(3,4),(5,6)\}$\\
+	Set 2 = $\{(1,4),(2,6),(3,5)\}$\\
+	Set 3 = $\{(1,6),(2,3),(4,5)\}$\\
+	Set 4 = $\{(1,5),(2,4),(3,6)\}$\\
+	Set 5 = $\{(1,3),(2,5),(4,6)\}$\\
+\end{center}
+In generale, ogni set contiene $\hat{n}/2$ coppie di colonne ortogonalizzate in parallelo, dove $\hat{n}$ è il prossimo numero intero pari maggiore o uguale a $n$. Se $n$ è dispari, quindi ogni set avrà una colonna accoppiata con una colonna "fantasma"; le coppie che contengono la colonna fantasma non sono ortogonali. In base a questo schema, sono necessari $\hat{n}/2 - 1$ set per completare una sweep completa.
+
+La coppia di colonne $(p', q')$ ortogonalizzata dalla $i-$esima rotazione in un set viene calcolata direttamente dalla coppia di colonne $(p, q)$ corrispondente ortogonalizzata dalla $i-$esima rotazione nel set precedente. In pratica, questo schema è più adatto per l'esecuzione su una GPU in cui la larghezza di banda di calcolo supera notevolmente la larghezza di banda di memoria. \cite{Romer:SVD}
+
+%Dal capitolo Parallel-Order Jacobi algorithm nell'articolo Acosta
+Nelle tradizionali implementazioni sequenziali dell'algoritmo Jacobi, il parallelismo non viene sfruttato, principalmente a causa della dipendenza dei dati di una rotazione con la sua precedente. L'algoritmo Jacobi parallelo sfrutta il massimo parallelismo per la decomposizione di una matrice simmetrica. Questo algoritmo richiede un numero di step pari a $n - 1$, in cui in ogni step si compiono $n/2$ rotazioni. Tutte le rotazioni all'interno di uno step possono essere eseguite in parallelo. \cite{Acosta:SVD}
+
+%Dal capitolo IMPLEMENTING THE SVD USING CUDA nell'articolo Romer
+Si è usato CUDA per implementare una SVD parallela basata sul metodo One-Sided Jacobi descritto in~\ref{sec:OneSidedJacobi}. La matrice di input $A \quad (m \times n)$ è una matrice reale in cui $m \geq n$. Se $m < n$, la SVD di A può essere calcolata dalla SVD di $A^T = V \Sigma U^T$. Le matrici di input sono salvate in column-major order e single-precision floating point. \cite{Romer:SVD}

@@ -1,1 +1,48 @@
-Descrizione algoritmo sequential
+%Descrizione algoritmo sequential
+%Dal capitolo Jacobi rotation nell'articolo Acosta
+%https://tex.stackexchange.com/questions/55054/bordermatrix-with-brackets-instead-of-parentheses
+\makeatletter
+\def\bbordermatrix#1{\begingroup \m@th
+	\global\let\perhaps@scriptstyle\scriptstyle
+	\@tempdima 4.75\p@
+	\setbox\z@\vbox{%
+		\def\cr{%
+			\crcr
+			\noalign{%
+				\kern2\p@
+				\global\let\cr\endline
+				\global\let\perhaps@scriptstyle\relax
+			}%
+		}%
+		\ialign{$\make@scriptstyle{##}$\hfil\kern2\p@\kern\@tempdima
+			&\thinspace\hfil$\perhaps@scriptstyle##$\hfil
+			&&\quad\hfil$\perhaps@scriptstyle##$\hfil\crcr
+			\omit\strut\hfil\crcr
+			\noalign{\kern-\baselineskip}%
+			#1\crcr\omit\strut\cr}}%
+	\setbox\tw@\vbox{\unvcopy\z@\global\setbox\@ne\lastbox}%
+	\setbox\tw@\hbox{\unhbox\@ne\unskip\global\setbox\@ne\lastbox}%
+	\setbox\tw@\hbox{$\kern\wd\@ne\kern-\@tempdima\left[\kern-\wd\@ne
+		\global\setbox\@ne\vbox{\box\@ne\kern2\p@}%
+		\vcenter{\kern-\ht\@ne\unvbox\z@\kern-\baselineskip}\,\right]$}%
+	\null\;\vbox{\kern\ht\@ne\box\tw@}\endgroup}
+\def\make@scriptstyle#1{\vcenter{\hbox{$\scriptstyle#1$}}}
+\makeatother
+
+La rotazione di Jacobi è una rotazione di un sottospazio bidimensionale in uno spazio $n$-dimensionale, denotato da \textbf{J}. Dopo l'applicazione di questa trasformazione, una coppia di elementi di una matrice simmetrica  $\mathbf{B} \in \mathbb{R}^{n \times n}$ sono azzerati, come indicato in $\mathbf{B} \longmapsto \mathbf{J^TBJ} = \mathbf{B}'$ dove $c = \cos (\theta)$, $s = \sin (\theta)$ e $\theta$ è l'angolo di rotazione nel piano $(i, j)$. Solo le righe $i$-esima e $j$-esima di $\mathbf{B}$ sono interessate. In modo simile, solo le colonne $j$-esima e $i$-esima sono interessate. Gli elementi $b'_{ij}$, $b'_{ji}$,  $b'_{ii}$ e $b'_{jj}$ in $\mathbf{B}$ vengono utilizzati per calcolare gli angoli nelle matrici di rotazione che eliminano gli elementi $b'_{ij}$ e $b'_{ji}$ come mostrato in Eq.~\ref{eq:J_matrix}. 
+\begin{equation} \label{eq:J_matrix}
+%
+\mathbf{J}(i,j,\theta) = \bbordermatrix{
+	& & & i& &j &  & \cr
+	&1 & \dots & 0 & \dots & 0 &\dots & 0 \cr
+	&\vdots & \ddots & \vdots & & \vdots & & \vdots\cr
+	i&0 & \dots & c & \dots & s & \dots & 0 \cr
+	&\vdots & & \vdots & & \vdots & & \vdots\cr
+	j&0 & \dots & -s & \dots & c & \dots & 0\cr
+	&\vdots & & \vdots & & \vdots & \ddots & \vdots\cr
+	&0 & \dots & 0 & \dots & 0 & \dots & 1\cr
+}
+%
+\end{equation}
+L'algoritmo Jacobi esegue una sequenza di aggiornamenti della matrice $\mathbf{B}$ che viene ortogonalizzata, ogni nuova matrice $\mathbf{B}$ è più diagonale rispetto alla predecedente.  Quando gli elementi fuori della diagonale sono abbastanza piccoli, possono essere considerati nulli. In particolare, ogni rotazione Jacobi comporta una pre-moltiplicazione e una post-moltiplicazione di $\mathbf{B}$ per matrici ortogonali. In generale, vengono eseguite $(n^2 - n)/2$ rotazioni (nel caso di una matrice simmetrica) cercando di rendere zero tutti gli elementi fuori diagonale. Queste $(n^2 - n)/2$ transformazioni costituiscono una scansione (sweep). Comunemente, le rotazioni di Jacobi vengono applicate utilizzando uno dei seguenti approcci: esecuzione di rotazioni cicliche per riga o per colonna. In questi approcci, la coppia $(i, j)$ è selezionata riga per riga o colonna per colonna, rispettivamente. Ad esempio, se $n = 4$, la sequenza di rotazione è: $(i, j) = (1,2), (1,3), (1,4), (2, 3), (2,4), (3,4)$.
+\cite{Acosta:SVD}

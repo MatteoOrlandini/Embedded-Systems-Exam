@@ -1,0 +1,51 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introduzione}{1}{section.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}SVD}{1}{subsection.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}One Sided Jacobi SVD}{1}{subsection.1.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3}CUDA}{1}{subsection.1.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.3.1}Parallel Computing}{1}{subsubsection.1.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.3.2}Sequential and Parallel Programming}{3}{subsubsection.1.3.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.3.3}CUDA Programming Structure}{4}{subsubsection.1.3.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.3.4}Managing Memory}{5}{subsubsection.1.3.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{MEMORY HIERARCHY}{6}{section*.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.3.5}Organizing Threads}{7}{subsubsection.1.3.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.3.6}CUDA Memory Model}{9}{subsubsection.1.3.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Registers}{10}{section*.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Local Memory}{11}{section*.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Shared Memory}{11}{section*.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Constant Memory}{12}{section*.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Texture Memory}{13}{section*.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Global Memory}{13}{section*.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Sequential implementation}{15}{section.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Parallel implementation}{16}{section.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Global Memory}{17}{subsection.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Semi Shared Memory}{17}{subsection.3.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Shared Memory}{17}{subsection.3.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Performance}{18}{section.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Conclusioni}{19}{section.5}% 
