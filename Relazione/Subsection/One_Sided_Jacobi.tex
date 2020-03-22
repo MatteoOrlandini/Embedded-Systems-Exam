@@ -1,1 +1,4 @@
-One Sided Jacobi SVD: spiegazione dell'algoritmo
+Per effettuare la SVD di una matrice, sono stati sviluppati numerosi algoritmi con lo scopo di ottimizzare il numero di operazioni svolte dalla macchina.
+Uno di quelli più usati è l'algoritmo di Jacobi con la sua variante One Sided Jacobi. L'approccio utilizzato è quello di applicare successive rotazione alla matrice originale, in modo da azzerare le componenti che si trovino al di fuori della diagonale. Tramite diverse iterazioni, si ottiene come risultato finale una matrice diagonale contenente i valori singolari richiesti.
+\subsubsection{Jacobi rotation}
+La rotazione di Jacobi è una operazione che consente di azzerare selettivamente elementi specifici di una matrice. Tramite una rotazione in due dimensioni (p,q) viene azzerato l'elemento (p,q) e (q,p)

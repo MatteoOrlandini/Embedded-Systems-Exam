@@ -1,1 +1,43 @@
-SVD: spiegazione della teoria della SVD
+In algebra lineare, la decomposizione ai valori singolari (SVD), è una fattorizzazione di una matrice in tre diverse matrici basata sull'uso di autovalori e autovettori.
+
+La decomposizione di una matrice $\mathbf{A}$ si basa sul \textit{teorema fondamentale dell'algebra lineare}: 
+
+Data una matrice $\mathbf{A}\in\mathbb{C}^{m\times n}$ ri rango $\rho$, la decomposizione in valori singolari di $\mathbf{A}$ è rappresentata dal prodotto di due matrici unitarie $\mathbf{U}\in\mathbb{C}^{m\times m}$, $\mathbf{V}\in\mathbb{C}^{n\times n}$ e una matrice diagonale $\mathbf{\Sigma}\in\mathbb{R}^{m\times n}$, come mostrato in (\ref{svd}).
+\begin{equation}\label{svd}
+\mathbf{A}=\mathbf{U}\mathbf{\Sigma}\mathbf{V}^H
+\end{equation}
+Le colonne di $\mathbf{U}$ sono chiamate \textit{vettori singolari sinistri} di $\mathbf{A}$ mentre le colonne di $\mathbf{V}$ sono i \textit{vettori singolari destri} di $\mathbf{A}$. Inoltre, $\mathbf{\Sigma}$ è una matrice reale non negativa del tipo
+\[
+\Sigma=\begin{bmatrix}
+\sigma_1 & 0 & 0 & 0\\
+0 & \ddots & 0 & 0\\
+0 & 0 & \sigma_{\rho} & 0\\
+0 & 0 & 0 & 0
+\end{bmatrix}
+\]
+Gli elementi diagonali di $\Sigma$ sono i \textit{valori singolari} di $\mathbf{A}$ e sono solitamente in ordine decrescente: $\sigma_1 \geq \sigma_2 \geq ... \geq \sigma_{\rho} > 0, \sigma_{\rho+1}=...=0$.
+
+Nel caso in cui $\mathbf{A}\in\mathbb{R}^{m\times n}$ l'equazione (\ref{svd}) diventa:
+\begin{equation}\label{svd2}
+\mathbf{A}=\mathbf{U}\mathbf{\Sigma}\mathbf{V}^T
+\end{equation}
+dove $\mathbf{U}\in\mathbb{R}^{m\times m}$ e $\mathbf{V}\in\mathbb{R}^{n\times n}$ sono matrici ortonormali.
+\begin{eqnarray}
+\mathbf{U}\mathbf{U}^T=\mathbf{U}^T\mathbf{U}=I^{m\times m}\\
+\mathbf{V}\mathbf{V}^T=\mathbf{V}^T\mathbf{V}=I^{n\times n}
+\end{eqnarray}
+Unendo queste due proprietà all'equazione (\ref{svd2}) si possono ricavare l'espressione di $\mathbf{A}\mathbf{A}^T$:
+\[
+\mathbf{A}\mathbf{A}^T=\mathbf{U}\mathbf{\Sigma}\mathbf{V}^T(\mathbf{U}\mathbf{\Sigma}\mathbf{V}^T)^T=\mathbf{U}\mathbf{\Sigma}\mathbf{V}^T\mathbf{V}\mathbf{\Sigma}\mathbf{U}^T=\mathbf{U}\mathbf{\Sigma}^2\mathbf{U}^T
+\]
+Allo stesso modo, per $\mathbf{A}^T\mathbf{A}$:
+\[
+\mathbf{A}^T\mathbf{A}=\mathbf{V}\mathbf{\Sigma}^2\mathbf{V}^T
+\]
+La SVD ha numerose applicazioni nel campo dell'algebra lineare. Innanzitutto fornisce delle informazioni importanti sulla matrice $\mathbf{A}$, come il suo rango, qual è il suo nucleo e qual è la sua immagine. Viene usata per definire la pseudo-inversa di una matrice rettangolare utile per la risoluzione del problema dei minimi quadrati. Trova utilizzo anche nella risoluzione di sistema di equazioni lineari omogeneo.
+
+Un'altra importante applicazione riguarda l'approssimazione della matrice $\mathbf{A}$, con una di rango inferiore (SVD troncata), utilizzata nell'elaborazione di immagini e nell'elaborazione dei segnali.
+
+La SVD ha anche note applicazioni nel campo dell'analisi delle componenti principali.
+
+
