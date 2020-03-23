@@ -40,14 +40,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Sequential implementation}{17}{section.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Parallel implementation}{18}{section.3}% 
+\contentsline {section}{\numberline {3}Parallel implementation}{21}{section.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Global Memory}{19}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.1}Global Memory}{22}{subsection.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Semi Shared Memory}{19}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.2}Semi Shared Memory}{22}{subsection.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Shared Memory}{19}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.3}Shared Memory}{22}{subsection.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Performance}{20}{section.4}% 
+\contentsline {section}{\numberline {4}Performance}{23}{section.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclusioni}{21}{section.5}% 
+\contentsline {section}{\numberline {5}Conclusioni}{24}{section.5}% 

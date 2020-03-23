@@ -1,25 +1,11 @@
 Per effettuare la SVD di una matrice, sono stati sviluppati numerosi algoritmi con lo scopo di ottimizzare il numero di operazioni svolte dalla macchina.
 Uno di quelli più usati è l'algoritmo di Jacobi con la sua variante One Sided Jacobi. L'approccio utilizzato è quello di applicare successive rotazione alla matrice originale, in modo da azzerare le componenti che si trovino al di fuori della diagonale. Tramite diverse iterazioni, si ottiene come risultato finale una matrice diagonale contenente i valori singolari richiesti.
 \subsubsection{Jacobi rotation}
-La rotazione di Jacobi è una operazione che consente di azzerare selettivamente elementi specifici di una matrice. Tramite una rotazione in due dimensioni p e q vengono azzerati gli elementi (p,q) e (q,p) della matrice.
 
-L'operazione si basa sull'utilizzo della matrice di Jacobi $J(p,q,\theta)$ del tipo:
-\[
-J(p,q,\theta)=\begin{bmatrix}
 1 &  &  &  &  &  & \\
- & \ddots &  &  &  & 0 & \\
- &  & c & \cdots & -s &  & \\
- &  & \vdots & \ddots & \vdots &  & \\
- &  & s & \cdots & c &  & \\
- & 0 &  &  &  & \ddots & \\
- &  &  &  &  &  & 1
 \end{bmatrix}
-\]
-dove $c=cos(\theta)$ e $s=sin(\theta)$, vengono applicati solo nelle dimensioni p e q.
 
-Premoltiplicare un vettore per $J(p,q,\theta)^T$ equivale a ruotarlo in senso antiorario di un angolo $\theta$ nel piano $(p,q)$. Questa rotazione produce un vettore risultante nel quale la componente q è stata azzerata. Infatti se $x\in\mathbb{R}^{n}$ e
 \begin{equation}
-y=J(p,q,\theta)^Tx
 \end{equation}
 allora
 \begin{eqnarray}
@@ -27,9 +13,7 @@ y_p=cx_p-sx_q\\
 y_q=sx_p+cx_q\label{yq}\\
 y_i=x_i, i\neq p,q
 \end{eqnarray}
-Da \ref{yq} si nota che $y_q$ può essere azzerata ponendo:
 \begin{equation}
-c=\frac{x_p}{\sqrt{x_p^2+x_q^2}},s=\frac{-x_q}{\sqrt{x_p^2+x_q^2}}
 \end{equation}
 Per una matrice $\mathbf{A}$ simmetrica, è possibile azzerare le componenti (p,q) e (q,p) applicando la \ref{jacrot}.
 \begin{equation}

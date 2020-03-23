@@ -8,14 +8,14 @@ Data una matrice $\mathbf{A}\in\mathbb{C}^{m\times n}$ di rango $\rho$, la decom
 \end{equation}
 Le colonne di $\mathbf{U}$ sono chiamate \textit{vettori singolari sinistri} di $\mathbf{A}$ mentre le colonne di $\mathbf{V}$ sono i \textit{vettori singolari destri} di $\mathbf{A}$. Inoltre, $\mathbf{\Sigma}$ è una matrice reale non negativa del tipo
 \[
-\Sigma=\begin{bmatrix}
+\mathbf{\Sigma}=\begin{bmatrix}
 \sigma_1 & 0 & 0 & 0\\
 0 & \ddots & 0 & 0\\
 0 & 0 & \sigma_{\rho} & 0\\
 0 & 0 & 0 & 0
 \end{bmatrix}
 \]
-Gli elementi diagonali di $\Sigma$ sono i \textit{valori singolari} di $\mathbf{A}$ e sono solitamente in ordine decrescente: $\sigma_1 \geq \sigma_2 \geq ... \geq \sigma_{\rho} > 0, \sigma_{\rho+1}=...=0$.
+Gli elementi diagonali di $\mathbf{\Sigma}$ sono i \textit{valori singolari} di $\mathbf{A}$ e sono solitamente in ordine decrescente: $\sigma_1 \geq \sigma_2 \geq ... \geq \sigma_{\rho} > 0, \sigma_{\rho+1}=...=0$.
 
 Nel caso in cui $\mathbf{A}\in\mathbb{R}^{m\times n}$ l'equazione (\ref{svd}) diventa:
 \begin{equation}\label{svd2}
