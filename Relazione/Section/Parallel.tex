@@ -19,3 +19,28 @@ Nelle tradizionali implementazioni sequenziali dell'algoritmo Jacobi, il paralle
 
 %Dal capitolo IMPLEMENTING THE SVD USING CUDA nell'articolo Romer
 Si è usato CUDA per implementare una SVD parallela basata sul metodo One-Sided Jacobi descritto in~\ref{sec:OneSidedJacobi}. La matrice di input $A \quad (m \times n)$ è una matrice reale in cui $m \geq n$. Se $m < n$, la SVD di A può essere calcolata dalla SVD di $A^T = V \Sigma U^T$. Le matrici di input sono salvate in column-major order e single-precision floating point. \cite{Romer:SVD}
+
+Viene ora mostrata l'implementazione in CUDA dell'algoritmo parallel. Il codice che richiama il kernel che esegue l'algoritmo One-Sided Jacobi parallel è il seguente.
+\begin{lstlisting}
+while(!host_exit_flag) {
+	++iter;
+	host_exit_flag = true; 
+	cudaMemcpy(dev_exit_flag, &host_exit_flag, sizeof(bool), cudaMemcpyHostToDevice);
+	for(int set = 0; set < cols; set++) {
+		scheduling<<<1, 1>>> (dev_v1, dev_v2, cols);
+		round <<<cols/2, rows>>> (dev_B, dev_v1, dev_v2, cols, rows, dev_exit_flag);		
+	}
+	cudaMemcpy( &host_exit_flag, dev_exit_flag, sizeof(bool), cudaMemcpyDeviceToHost);
+}
+\end{lstlisting}
+Le variabili \textit{host\_exit\_flag}, \textit{iter} e \textit{B} svolgono le stesse funzioni descritte nel codice~\ref{code:while_loop}.
+
+La variabile \textit{set} contiene............
+
+I vettori \textit{v1} e  \textit{v2} servono a........
+
+Il kernel \textit{scheduling} serve a........
+
+Il kernel \textit{round} chiama un numero di blocchi pari alla metà del numero delle colonne della matrice e un numero di thread pari alle righe della matrice perché......... Questo kernel esegue............
+
+Nei capitoli~\ref{sec:Global},~\ref{sec:Semi_Shared} e~\ref{sec:Shared} sono presentate tre varianti del kernel \textit{round} a seconda della memoria in cui viene immagazzinata la matrice \textit{B}.

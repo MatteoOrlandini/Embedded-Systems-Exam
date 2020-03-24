@@ -1,1 +1,35 @@
-Descrizione algoritmo Global Memory
+%Descrizione algoritmo Global Memory
+\label{sec:Global}
+In questo capitolo viene mostrato il kernel \textit{round} che usa la global memory.
+\begin{lstlisting}
+__global__ void round (float *B, int *v1, int *v2, int cols, int rows, bool * exit_flag) {
+	int blockId = blockIdx.x; //max(blockId) = (cols/2) - 1
+	int threadId = threadIdx.x; //max(blockId) = rows - 1
+	__shared__ float alpha, beta, gamm;
+	if ((blockId < cols/2) && (threadId < rows)){
+		int i = *(v1 + blockId);
+		int j = *(v2 + blockId);
+		float * pi = B + rows * i + threadId;
+		float * pj = B + rows * j + threadId;
+		alpha = beta = gamm = 0;
+		__syncthreads();
+		atomicAdd(&alpha, *pi * *pi);
+		atomicAdd(&beta, *pj * *pj);	
+		atomicAdd(&gamm, *pi * *pj);
+		__syncthreads();
+		if (*exit_flag) {
+			const float limit = fabsf(gamm) / sqrtf(alpha * beta);
+			if (limit > eps){
+				*exit_flag = false;
+			}
+		} 
+		const float tao = (beta - alpha) / (2 * gamm);
+		const float t = sign (tao) / (fabsf(tao) + sqrtf(1 + tao * tao)); 
+		const float c = expf(-0.5f * log1pf(t * t));
+		const float s = c * t;
+		const float tmp = *pi;
+		*pi = c * tmp - s * *pj;
+		*pj = s * tmp + c * *pj;
+	}
+}
+\end{lstlisting}

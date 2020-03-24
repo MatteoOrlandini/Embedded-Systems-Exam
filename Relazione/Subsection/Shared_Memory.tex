@@ -1,1 +1,47 @@
-Descrizione algoritmo Shared Memory
+%Descrizione algoritmo Shared Memory
+\label{sec:Shared}
+Nell'implementazione in cui viene usata la shared memory per lavorare con la matrice \textit{B} si può notare che tra le parentesi angolari che indicano i blocchi e i thread allocati per il kernel è presente una terza variabile come si può vedere nel codice seguente
+\begin{lstlisting}
+round <<<cols/2, rows, 2*rows*sizeof(float)>>> (dev_B, dev_v1, dev_v2, cols, rows, dev_exit_flag);
+\end{lstlisting}
+Questo permette di allocare dinamicamente la memoria shared, che può essere utilizzata quando la quantità di memoria condivisa non è nota al momento della compilazione. In questo caso, la dimensione di allocazione della memoria shared per ogni blocco deve essere specificata (in byte) utilizzando un terzo parametro di configurazione come mostrato precedentemente.
+\begin{lstlisting}
+__global__ void round (float *B, int *v1, int *v2, int cols, int rows, bool * exit_flag) {
+	int blockId = blockIdx.x; //max(blockId) = (cols/2) - 1
+	int threadId = threadIdx.x; //max(blockId) = rows - 1
+	__shared__ float alpha, beta, gamm, limit, tao, t, c, s, tmp;
+	extern __shared__ float arr[];
+	__shared__ int i, j;
+	if ((blockId < cols/2) && (threadId < rows)){
+		i = *(v1 + blockId);
+		j = *(v2 + blockId);
+		arr[threadId] = *(B + rows * i + threadId);
+		arr[threadId+rows] = *(B + rows * j + threadId);
+		alpha = beta = gamm = 0;
+		__syncthreads();
+		atomicAdd(&alpha, arr[threadId] * arr[threadId]);
+		atomicAdd(&beta, arr[threadId+rows] * arr[threadId+rows]);	
+		atomicAdd(&gamm, arr[threadId] * arr[threadId+rows]);
+		__syncthreads();
+		if (*exit_flag) {
+			limit = fabsf(gamm) / sqrtf(alpha * beta);
+			if (limit > eps){
+				*exit_flag = false;
+			}
+		}
+		tao = (beta - alpha) / (2 * gamm);
+		t = sign (tao) / (fabsf(tao) + sqrtf(1 + tao * tao)); 
+		c = expf(-0.5f * log1pf(t * t));
+		s = c * t;
+		tmp = arr[threadId];
+		arr[threadId] = c * tmp - s * arr[threadId+rows];
+		arr[threadId+rows] = s * tmp + c * arr[threadId+rows];
+		*(B + rows * i + threadId) = arr[threadId];
+		*(B + rows * j + threadId) = arr[threadId+rows];
+	}
+}
+\end{lstlisting}
+Il kernel con memoria shared dinamica, \textit{round}, dichiara l'array nella shared memory utilizzando un array extern senza dimensione(si noti le parentesi vuote e l'uso dell'identificatore \textit{extern}). La dimensione è implicitamente determinata dal terzo parametro di configurazione all'avvio del kernel.
+\begin{lstlisting}
+extern __shared__ float arr[];
+\end{lstlisting}
