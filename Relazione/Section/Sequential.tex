@@ -29,6 +29,8 @@
 \def\make@scriptstyle#1{\vcenter{\hbox{$\scriptstyle#1$}}}
 \makeatother
 
+\label{sec:Sequential}
+
 La rotazione di Jacobi è una rotazione di un sottospazio bidimensionale in uno spazio $n$-dimensionale, denotato da \textbf{J}. Dopo l'applicazione di questa trasformazione, una coppia di elementi di una matrice simmetrica  $\mathbf{B} \in \mathbb{R}^{n \times n}$ sono azzerati, come indicato in $\mathbf{B} \longmapsto \mathbf{J^TBJ} = \mathbf{B}'$ dove $c = \cos (\theta)$, $s = \sin (\theta)$ e $\theta$ è l'angolo di rotazione nel piano $(i, j)$. Solo le righe $i$-esima e $j$-esima di $\mathbf{B}$ sono interessate. In modo simile, solo le colonne $j$-esima e $i$-esima sono interessate. Gli elementi $b'_{ij}$, $b'_{ji}$,  $b'_{ii}$ e $b'_{jj}$ in $\mathbf{B}$ vengono utilizzati per calcolare gli angoli nelle matrici di rotazione che eliminano gli elementi $b'_{ij}$ e $b'_{ji}$ come mostrato in Eq.~\eqref{eq:J_matrix}. 
 \begin{equation} \label{eq:J_matrix}
 %
@@ -48,7 +50,7 @@ L'algoritmo Jacobi esegue una sequenza di aggiornamenti della matrice $\mathbf{B
 \cite{Acosta:SVD}
 
 Viene ora mostrata l'implementazione in CUDA dell'algoritmo sequenziale. Il kernel che esegue l'algoritmo One-Sided Jacobi sequential è compreso in un ciclo \textbf{while} mostrato di seguito.
-\begin{lstlisting}[caption=While loop,label=code:while_loop]
+\begin{lstlisting}[caption=Loop algoritmo sequential,label=code:sequential_loop]
 while (!host_exit_flag) {
 	++iter;
 	host_exit_flag = true;
@@ -110,7 +112,7 @@ float atomicAdd(float* address, float val);
 legge la variabile floating point a 32 bit \textit{old} memorizzata all'indirizzo di memoria \textit{address} nella memoria globale o shared, calcola (\textit{old} + \textit{val}), e salva il risultato allo stesso indirizzo di memoria. Queste tre operazioni sono eseguite in una sola operazione atomica. La funzione ritorna \textit{old}. Nel kernel, viene usata per calcolare la norma del vettore colonna i-esimo e j-esimo e il loro prodotto scalare e scriverlo rispettivamente in \textit{alpha}, \textit{beta} e \textit{gamm}.
 
 Se la variabile \textit{exit\_flag} è true, si calcola \textit{limit} e se è maggiore di \textit{eps} dichiarata globalmente
-\begin{lstlisting}
+\begin{lstlisting}[caption=Dichiarazione della variabile \textit{eps},label=code:eps]
 static const float eps = 1e-4;
 \end{lstlisting}
 allora si porta \textit{exit\_flag} false.

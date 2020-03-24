@@ -2002,10 +2002,19 @@
     <bcf:citekey order="5">Cheng:ProfessionalCudaProgramming</bcf:citekey>
     <bcf:citekey order="6">Cheng:ProfessionalCudaProgramming</bcf:citekey>
     <bcf:citekey order="7">Cheng:ProfessionalCudaProgramming</bcf:citekey>
-    <bcf:citekey order="8">Acosta:SVD</bcf:citekey>
-    <bcf:citekey order="9">Romer:SVD</bcf:citekey>
-    <bcf:citekey order="10">Acosta:SVD</bcf:citekey>
-    <bcf:citekey order="11">Romer:SVD</bcf:citekey>
+    <bcf:citekey order="8">Cheng:ProfessionalCudaProgramming</bcf:citekey>
+    <bcf:citekey order="9">Cheng:ProfessionalCudaProgramming</bcf:citekey>
+    <bcf:citekey order="10">Cheng:ProfessionalCudaProgramming</bcf:citekey>
+    <bcf:citekey order="11">Cheng:ProfessionalCudaProgramming</bcf:citekey>
+    <bcf:citekey order="12">Cheng:ProfessionalCudaProgramming</bcf:citekey>
+    <bcf:citekey order="13">Cheng:ProfessionalCudaProgramming</bcf:citekey>
+    <bcf:citekey order="14">Cheng:ProfessionalCudaProgramming</bcf:citekey>
+    <bcf:citekey order="15">Acosta:SVD</bcf:citekey>
+    <bcf:citekey order="16">Romer:SVD</bcf:citekey>
+    <bcf:citekey order="17">Acosta:SVD</bcf:citekey>
+    <bcf:citekey order="18">Romer:SVD</bcf:citekey>
+    <bcf:citekey order="19">Cheng:ProfessionalCudaProgramming</bcf:citekey>
+    <bcf:citekey order="20">Sanders:CudaByExample</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
