@@ -39,8 +39,21 @@ La variabile \textit{set} contiene............
 
 I vettori \textit{v1} e  \textit{v2} servono a........
 
-Il kernel \textit{scheduling} serve a........
+Il kernel \textit{scheduling} serve a........ ed è definito come segue
+\begin{lstlisting}
+__global__ void scheduling (int *v1, int *v2, int cols){
+	int tmp = v2[0];
+	for (int i = 0; i < (cols/2) - 1; i++)
+	v2[i] = v2[i+1];	
+	v2[cols/2 - 1] = v1[cols/2 - 1];
+	for (int i = (cols/2) -1; i > 1; i--)
+	v1[i] = v1[i-1];	
+	v1[1] = tmp;
+}
+\end{lstlisting}
 
 Il kernel \textit{round} chiama un numero di blocchi pari alla metà del numero delle colonne della matrice e un numero di thread pari alle righe della matrice perché......... Questo kernel esegue............
 
 Nei capitoli~\ref{sec:Global},~\ref{sec:Semi_Shared} e~\ref{sec:Shared} sono presentate tre varianti del kernel \textit{round} a seconda della memoria in cui viene immagazzinata la matrice \textit{B}.
+
+Il calcolo dei valori singolari è eseguito dal kernel~\textit{computeSingVals}, codice~\ref{code:computeSingVals}, precedentemente descritto.

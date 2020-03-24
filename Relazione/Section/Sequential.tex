@@ -126,7 +126,7 @@ computeSingVals<<<columns, rows>>>(B, AUX1, rows, columns);
 dove \textit{AUX1} è un array che contiene i valori singolari.
 
 Il kernel \textit{computeSingVals} viene definito come
-\begin{lstlisting}
+\begin{lstlisting}[caption=Kernel per il calcolo dei valori singolari,label=code:computeSingVals]
 __global__ void computeSingVals (float * B, float * AUX1, int rows, int columns){
 	int k = threadIdx.x;
 	int j = blockIdx.x;

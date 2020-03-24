@@ -1,13 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.13)  24 MAR 2020 11:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.18)  24 MAR 2020 12:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Relazione.tex
 (./Relazione.tex
 LaTeX2e <2018-12-01>
-(c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
-(c:/texlive/2019/texmf-dist/tex/latex/base/size12.clo
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -22,67 +22,65 @@ File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(c:/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2019/04/03 3.29 The Babel package
 
-(c:/texlive/2019/texmf-dist/tex/generic/babel/switch.def
+(c:/Program Files/texlive/2019/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2019/04/03 3.29 Babel switching mechanism
 )
-(c:/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
+(c:/Program Files/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
-
-(c:/texlive/2019/texmf-dist/tex/generic/babel/babel.def
+(c:/Program Files/texlive/2019/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2019/04/03 3.29 Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 
-(c:/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
+(c:/Program Files/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@dirlevel=\count89
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 )
-(c:/texlive/2019/texmf-dist/tex/generic/babel-italian/italian.ldf
+(c:/Program Files/texlive/2019/texmf-dist/tex/generic/babel-italian/italian.ldf
 Language: italian 2019/01/05 v.1.4.01 Italian support for the babel system
 \it@lettering=\count90
 \it@doublequoteactive=\count91
 \it@ISOcompliance=\count92
-))
-(c:/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+)) (c:/Program Files/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count93
 )
-(c:/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 )
-(c:/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
 
-(c:/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen104
 ))
-(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen105
 )
-(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count94
@@ -123,41 +121,41 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 LaTeX Info: Redefining \[ on input line 2844.
 LaTeX Info: Redefining \] on input line 2845.
 )
-(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(c:/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
 )
-(c:/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(c:/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
 )
-(c:/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count106
 \lst@gtempboxa=\box29
 \lst@token=\toks22
@@ -171,18 +169,18 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \lst@lineno=\count111
 \lst@maxwidth=\dimen118
 
-(c:/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 \c@lstnumber=\count112
 \lst@skipnumbers=\count113
 \lst@framebox=\box30
 )
-(c:/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
 Package: listings 2019/02/27 1.8b (Carsten Heinz)
 
-(c:/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
 \csq@reset=\count114
 \csq@gtype=\count115
@@ -192,36 +190,36 @@ Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
 \csq@tshold=\count119
 \csq@ltx@everypar=\toks23
 
-(c:/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.def
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2018/04/13 v5.2d csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-(c:/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.cfg
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 )
 Package csquotes Info: Enabling multilingual quotes.
 Package csquotes Info: Redefining alias 'italian' -> 'italian/guillemets'.
 )
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2018/11/02 v3.12 programmable bibliographies (PK/MW)
 
-(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -229,26 +227,26 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(c:/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 )))
-(c:/texlive/2019/texmf-dist/tex/latex/logreq/logreq.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count120
 
-(c:/texlive/2019/texmf-dist/tex/latex/logreq/logreq.def
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-(c:/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(c:/texlive/2019/texmf-dist/tex/latex/url/url.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -309,7 +307,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/blx-dm.def
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/biblatex/blx-dm.def
 File: blx-dm.def 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
@@ -401,13 +399,13 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/blx-compat.def
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
 
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.def
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
 \c@textcitecount=\count299
 \c@textcitetotal=\count300
@@ -420,20 +418,19 @@ File: biblatex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
 File: numeric.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count306
 \c@bbx:relatedtotal=\count307
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
-
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
 File: numeric.cbx 2018/11/02 v3.12 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -450,10 +447,10 @@ Package biblatex Info: Redefining '\smartcites'.
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
 
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.cfg
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 ))
-(c:/texlive/2019/texmf-dist/tex/latex/float/float.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count308
 \float@exts=\toks24
@@ -461,14 +458,16 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks25
 \@floatcapt=\box32
 )
-(c:/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
 
-(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.
+sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.s
+ty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -496,25 +495,23 @@ Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-)
-(c:/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+) (c:/Program Files/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-(c:/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
+) (c:/Program Files/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen119
 \Hy@linkcounter=\count309
 \Hy@pagecounter=\count310
 
-(c:/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count311
 
-(c:/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4519.
@@ -545,12 +542,12 @@ LaTeX Info: Redefining \pageref on input line 6454.
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(c:/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
 \Fld@listcount=\count317
 \c@bookmark@seq@number=\count318
 
-(c:/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -566,10 +563,10 @@ Package hyperref Info: Option `pdftoolbar' set `true' on input line 47.
 Package hyperref Info: Option `pdfmenubar' set `true' on input line 47.
 Package hyperref Info: Option `pdffitwindow' set `false' on input line 47.
 Package hyperref Info: Option `colorlinks' set `false' on input line 47.
-(c:/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -583,13 +580,13 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 
-(c:/texlive/2019/texmf-dist/tex/latex/graphics/dvipsnam.def
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
-(c:/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/02/27 1.8b listings language file
 )
-(c:/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 )
 
@@ -599,13 +596,13 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package biblatex Info: Trying to load language 'italian'...
 Package biblatex Info: ... file 'italian.lbx' found.
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
 File: italian.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
 (./Relazione.aux)
@@ -628,7 +625,7 @@ LaTeX Font Info:    ... okay on input line 100.
 LaTeX Info: Redefining \it@ocap on input line 100.
 LaTeX Info: Redefining \it@ccap on input line 100.
 
-(c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(c:/Program Files/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count319
 \scratchdimen=\dimen123
@@ -641,10 +638,11 @@ LaTeX Info: Redefining \it@ccap on input line 100.
 \MPnumerator=\count323
 \makeMPintoPDFobject=\count324
 \everyMPtoPDFconversion=\toks27
-) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+)
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(c:/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -654,7 +652,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 
-(c:/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cf
+g
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -666,16 +665,17 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Relazione.bbl' found.
-
-(./Relazione.bbl)
+ (./Relazione.bbl)
 Package biblatex Info: Reference section=0 on input line 100.
 Package biblatex Info: Reference segment=0 on input line 100.
 \AtBeginShipoutBox=\box34
 Package hyperref Info: Link coloring OFF on input line 100.
- (c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
+
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(c:/Program Files/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.s
+ty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count326
@@ -683,8 +683,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 100.
 LaTeX Info: Redefining \pageref on input line 100.
 LaTeX Info: Redefining \nameref on input line 100.
-
-(./Relazione.out) (./Relazione.out)
+ (./Relazione.out) (./Relazione.out)
 \@outlinefile=\write4
 \openout4 = `Relazione.out'.
 
@@ -695,16 +694,17 @@ Package pdftex.def Info: Immagini/univpmlogo.png  used on input line 105.
 (pdftex.def)             Requested size: 77.99881pt x 77.99199pt.
  [1
 
-{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Immagini/univ
-pmlogo.png>] (./Relazione.toc
+{c:/Program Files/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <.
+/Immagini/univpmlogo.png>]
+(./Relazione.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 7.
 
-(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 7.
 
-(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+(c:/Program Files/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@toc=\write5
@@ -720,7 +720,7 @@ l.10 \[
         [1]) (./Subsection/One_Sided_Jacobi.tex [2] [3]) (./Subsection/CUDA.tex
 [4]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
- (c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+ (c:/Program Files/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
@@ -823,16 +823,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 249--251
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 70.
  [19] [20]) [21]
-(./Section/Parallel.tex) [22] (./Subsection/Global_Memory.tex)
-(./Subsection/Semi_Shared_Memory.tex) (./Subsection/Shared_Memory.tex) [23]
-(./Section/Performance.tex) [24] (./Section/Conclusioni.tex) [25]
+(./Section/Parallel.tex [22]) (./Subsection/Global_Memory.tex [23])
+(./Subsection/Semi_Shared_Memory.tex [24]) (./Subsection/Shared_Memory.tex
+[25] [26]) [27] (./Section/Performance.tex) [28] (./Section/Conclusioni.tex)
+[29]
 Overfull \hbox (5.19456pt too wide) in paragraph at lines 171--171
 []\T1/cmr/m/n/12 R. I. Acosta-Quiñonez, D. Torres-Roman, R. Rodrìguez-Avila e D
 . Robles-
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 172.
-[26]
+[30]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 172.
  (./Relazione.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 172.
@@ -844,39 +845,43 @@ Package logreq Info: Writing requests to 'Relazione.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 16490 strings out of 492623
- 263298 string characters out of 6133290
- 836881 words of memory out of 5000000
- 20006 multiletter control sequences out of 15000+600000
+ 16651 strings out of 492623
+ 268080 string characters out of 6126681
+ 880087 words of memory out of 5000000
+ 20039 multiletter control sequences out of 15000+600000
  22192 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,11n,49p,1070b,2062s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
-ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2019/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
-fb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/te
-xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2019
-/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/tex
-mf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2019/texmf-dist/fo
-nts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/
-public/cm-super/sfbx1440.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-
-super/sfbx1728.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx
-2488.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><
-c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb><c:/texlive
-/2019/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb><c:/texlive/2019/texm
-f-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2019/texmf-dist/fon
-ts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/p
-ublic/cm-super/sfrm1440.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-s
-uper/sfti1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1
-728.pfb>
-Output written on Relazione.pdf (27 pages, 495048 bytes).
+{c:/Program Files/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t
+1.enc}<c:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmbx8.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmex10.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi12.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr12.pfb><c:/Program Files/texlive/2019/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr8.pfb><c:/Program Files/texlive/2019/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Program Files/texlive/2019/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Program Files/texlive/2019/tex
+mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/Program Files/texliv
+e/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/Program Files/te
+xlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/Program File
+s/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/Program 
+Files/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/Prog
+ram Files/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/
+Program Files/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb>
+<c:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc1728.
+pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfcc2
+074.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/cm-super/s
+frm1095.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/cm-sup
+er/sfrm1200.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/cm
+-super/sfrm1440.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/type1/publi
+c/cm-super/sfti1200.pfb><c:/Program Files/texlive/2019/texmf-dist/fonts/type1/p
+ublic/cm-super/sfti1728.pfb>
+Output written on Relazione.pdf (31 pages, 512536 bytes).
 PDF statistics:
- 481 PDF objects out of 1000 (max. 8388607)
- 415 compressed objects within 5 object streams
- 143 named destinations out of 1000 (max. 500000)
+ 656 PDF objects out of 1000 (max. 8388607)
+ 585 compressed objects within 6 object streams
+ 271 named destinations out of 1000 (max. 500000)
  193 words of extra memory for PDF output out of 10000 (max. 10000000)
 
