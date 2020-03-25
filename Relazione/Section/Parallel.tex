@@ -35,11 +35,12 @@ while(!host_exit_flag) {
 \end{lstlisting}
 Le variabili \textit{host\_exit\_flag}, \textit{iter} e \textit{B} svolgono le stesse funzioni descritte nel codice~\ref{code:parallel_loop}.
 
-La variabile \textit{set} contiene............
+La variabile \textit{set} rappresenta il round attuale dello scheduling round robin. Come spiegato in precedenza, il numero di set necessari per formare tutte le possibili combinazioni sono $n-1$, dove $n$ è il numero di colonne della matrice originale.
 
-I vettori \textit{v1} e  \textit{v2} servono a........
+I vettori \textit{v1} e  \textit{v2} servono a rappresentare le coppie di colonne. Per ogni set gli elementi dei vettori con lo stesso indice rappresentano una coppia di colonne da ortogonalizzare mutualmente. L'aggiornamento di questi vettori viene effettuato dal kernel \textit{scheduling}.
 
-Il kernel \textit{scheduling} serve a........ ed è definito come segue
+Il kernel \textit{scheduling} ha lo scopo di ruotare i vettori \textit{v1} e  \textit{v2} ad ogni iterazione del ciclo in cui viene incrementato il valore di \textit{set}. Infatti, per effettuare l'algoritmo di round robin è sufficiente tenere fisso il primo elemento del primo vettore e routare gli altri come se fossero un unico vettore. Quindi, l'elemento 0 che rappresenta la prima colonna sarà sempre alla prima posizione del primo vettore. Gli altri elementi dello stesso vettore scorreranno verso destra, mentre il secondo vettore esegue uno shift verso sinistra. L'elemento uscente dal secondo vettore viene spostato nel posto vacante lasciato dall'elemento 1 di \textit{v1} mentre l'ultimo elemento del primo vettore diventa l'ultimo del secondo.
+Ogni iterazione di questo algoritmo viene effettuata sul device. In questo modo, non ci sarà la necessita di copiare i vettori da host a device e viceversa. Il costo computazionale per lanciare un kernel compensa di gran lunga quello che sarebbe stato necessario per le \textit{cudaMemcpy}.
 \begin{lstlisting}
 __global__ void scheduling (int *v1, int *v2, int cols){
 	int tmp = v2[0];
@@ -52,7 +53,20 @@ __global__ void scheduling (int *v1, int *v2, int cols){
 }
 \end{lstlisting}
 
-Il kernel \textit{round} chiama un numero di blocchi pari alla metà del numero delle colonne della matrice e un numero di thread pari alle righe della matrice perché......... Questo kernel esegue............
+Il kernel \textit{round} chiama un numero di blocchi pari alla metà del numero delle colonne della matrice e un numero di thread pari alle righe della matrice perché ad ogni blocco sarà assegnata una coppia di colonne, mentre i kernel rappresentano gli elementi delle colonne per ogni blocco.
+
+Una volta ricavati i valori identificativi del blocco e del thread attuale, viene estratta da \textit{v1} e  \textit{v2} la coppia corrispondente. Dato ogni blocco ha assegnata una coppia, gli elementi dei vettori con indici corrispondenti al blocco saranno gli indici delle coppie di colonne utilizzati per ogni thread.
+
+I puntatori \textit{pi} e \textit{pj} punteranno agli elementi su cui ogni thread deve lavorare. Perciò, i e j rappresentano le colonne ottenute da \textit{v1} e  \textit{v2}, mentre l'Id del thread indica la riga su cui lavorare (ovvero l'elemento della colonna corrispondente). Tenendo conto del fatto che la matrice B è in memoria in column order, è possibile accedere agli elementi specifici usando i parametri appena descritti.
+
+Le variabili \textit{alpha}, \textit{beta} e \textit{gamm} rappresentano le omonime descritte nella teoria dell'algoritmo di Jacobi. Queste variabile sono salvate nella memoria shared; in questo modo il loro valore è condiviso tra i thread dello stesso blocco. La funzione "atomicAdd" permette ad ogni thread di incrementare il valore delle variabili in maniera sequenziale, evitando collisioni dovute all'accesso in parallelo.
+Ogni thread calcola quindi il proprio valore di \textit{alpha}, \textit{beta} e \textit{gamm} per la riga che rappresentano e la aggiungono al valore complessivo che tiene conto della singola coppia su cui il blocco sta lavorando.
+
+Viene calcolato il valore limit con lo scopo di essere confrontato con il valore ammissibile che soddisfa la convergenza. Quando la soglia viene superata, viene modificata la variabile \textit{exit\_flag}, che permette di uscire dalle iterazioni una volta ritornata all'host.
+
+Seguendo le istruzioni spiegate in precedenza, si ricavano i valori delle variabili s e c, che rappresentano seno e coseno della matrice di rotazione. Queste variabili dipendono da \textit{alpha}, \textit{beta} e \textit{gamm}. Sono quindi comuni per ogni coppia di colonne.
+
+Infine, la matrice di rotazione viene applicata ruotando le colonne con i valori adeguati di c e s.
 
 Nei capitoli~\ref{sec:Global},~\ref{sec:Semi_Shared} e~\ref{sec:Shared} sono presentate tre varianti del kernel \textit{round} a seconda della memoria in cui viene immagazzinata la matrice \textit{B}.
 

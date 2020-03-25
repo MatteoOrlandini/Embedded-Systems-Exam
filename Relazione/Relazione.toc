@@ -44,12 +44,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Parallel implementation}{22}{section.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Global Memory}{24}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.1}Global Memory}{25}{subsection.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Semi Shared Memory}{24}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.2}Semi Shared Memory}{26}{subsection.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Shared Memory}{25}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.3}Shared Memory}{27}{subsection.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Performance}{28}{section.4}% 
+\contentsline {section}{\numberline {4}Performance}{29}{section.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclusioni}{34}{section.5}% 
+\contentsline {section}{\numberline {5}Conclusioni}{35}{section.5}% 
