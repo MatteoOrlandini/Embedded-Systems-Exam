@@ -1,7 +1,20 @@
 %Descrizione algoritmo Global Memory
 \label{sec:Global}
-In questo capitolo viene mostrato il kernel \textit{round} che usa la global memory.
-\begin{lstlisting}
+In questo capitolo viene mostrato il kernel \textit{round} che usa la global memory. 
+
+Nelle linee 2 e 3 del codice~\ref{code:Global_Memory}, una volta ricavati i valori identificativi del blocco e del thread attuale, salvati nelle variabili \textit{blockId} e \textit{threadId} rispettivamente, viene estratta da \textit{v1} e \textit{v2} la coppia di indici i e j che corrispondo all'i-esimo e j-esimo vettore colonna da ortogonalizzare. Gli indici vengono salvati nelle variabili \textit{i} e \textit{j} come si può vedere alle righe 6 e 7.
+
+I puntatori \textit{pi} e \textit{pj} punteranno agli elementi su cui ogni thread deve lavorare. Perciò, i e j rappresentano le colonne ottenute da \textit{v1} e  \textit{v2}, mentre l'Id del thread indica la riga su cui lavorare (ovvero l'elemento della colonna corrispondente). Tenendo conto del fatto che la matrice B è in memoria in column order, è possibile accedere agli elementi specifici come nelle linee 8 e 9 del codice~\ref{code:Global_Memory}.
+
+Le variabili \textit{alpha}, \textit{beta} e \textit{gamm} rappresentano le omonime descritte nella teoria dell'algoritmo di Jacobi nel capitolo~\ref{sec:OneSidedJacobi}. Queste variabili sono salvate nella memoria shared; in questo modo il loro valore è condiviso tra i thread dello stesso blocco. La funzione "atomicAdd" permette ad ogni thread di incrementare il valore delle variabili in maniera sequenziale, evitando collisioni dovute all'accesso in parallelo.
+Ogni thread calcola quindi il proprio valore di \textit{alpha}, \textit{beta} e \textit{gamm} per la riga che rappresentano e la aggiungono al valore complessivo che tiene conto della singola coppia su cui il blocco sta lavorando.
+
+Viene calcolato il valore \textit{limit} con lo scopo di essere confrontato con il valore ammissibile che soddisfa la convergenza. Quando la soglia viene superata, viene modificata la variabile \textit{exit\_flag}, che permette di uscire dalle iterazioni una volta ritornata all'host.
+
+Seguendo le istruzioni spiegate in precedenza, si ricavano i valori delle variabili \textit{s} e \textit{c}, che rappresentano seno e coseno della matrice di rotazione. Queste variabili dipendono da \textit{alpha}, \textit{beta} e \textit{gamm}. Sono quindi comuni per ogni coppia di colonne.
+
+Infine, la matrice di rotazione viene applicata ruotando le colonne con i valori adeguati di \textit{c} e \textit{s}.
+\begin{lstlisting}[numbers=left, label=code:Global_Memory, caption= Codice parallel global]
 __global__ void round (float *B, int *v1, int *v2, int cols, int rows, bool * exit_flag) {
 	int blockId = blockIdx.x; //max(blockId) = (cols/2) - 1
 	int threadId = threadIdx.x; //max(blockId) = rows - 1

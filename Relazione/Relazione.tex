@@ -96,6 +96,9 @@
 	{»}{{\guillemotright}}1 {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1
 }    
 
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
 \addbibresource{Bibliografia.bib}
 
 \begin{document}
@@ -122,8 +125,10 @@
 	{\large \today\par}
 \end{titlepage}
 
+\thispagestyle{empty}
 \tableofcontents
 
+\newpage
 \section{Introduzione}
 \input {Section/Introduzione}
 
@@ -134,15 +139,16 @@
 \label{sec:OneSidedJacobi}
 \input {Subsection/One_Sided_Jacobi}
 
-\subsection{CUDA}
-\input {Subsection/CUDA}
+\newpage
+\section{CUDA}
+\input {Section/CUDA}
 
 \newpage
-\section{Sequential implementation}
+\section{Implementazione sequenziale}
 \input {Section/Sequential}
 
 \newpage
-\section{Parallel implementation}
+\section{Implementazione parallela}
 \input {Section/Parallel}
 
 \subsection{Global Memory}

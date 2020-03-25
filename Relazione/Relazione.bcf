@@ -2013,8 +2013,9 @@
     <bcf:citekey order="16">Romer:SVD</bcf:citekey>
     <bcf:citekey order="17">Acosta:SVD</bcf:citekey>
     <bcf:citekey order="18">Romer:SVD</bcf:citekey>
-    <bcf:citekey order="19">Cheng:ProfessionalCudaProgramming</bcf:citekey>
-    <bcf:citekey order="20">Sanders:CudaByExample</bcf:citekey>
+    <bcf:citekey order="19">Romer:SVD</bcf:citekey>
+    <bcf:citekey order="20">Cheng:ProfessionalCudaProgramming</bcf:citekey>
+    <bcf:citekey order="21">Sanders:CudaByExample</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
