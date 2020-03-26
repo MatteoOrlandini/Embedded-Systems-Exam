@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.13)  25 MAR 2020 11:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.1.13)  26 MAR 2020 16:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -629,10 +629,270 @@ File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 
 Package Listings Warning: Unknown column format `flexile' on input line 97.
 
+(c:/texlive/2019/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(c:/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(c:/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks26
+\pgfutil@tempdima=\dimen131
+\pgfutil@tempdimb=\dimen132
+
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box33
+
+(c:/texlive/2019/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2019/02/02 v3.1.1 (3.1.1)
+))
+Package: pgf 2019/02/02 v3.1.1 (3.1.1)
+
+(c:/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(c:/texlive/2019/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2019/02/02 v3.1.1 (3.1.1)
+
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks27
+\pgfkeys@temptoks=\toks28
+
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks29
+))
+\pgf@x=\dimen133
+\pgf@y=\dimen134
+\pgf@xa=\dimen135
+\pgf@ya=\dimen136
+\pgf@xb=\dimen137
+\pgf@yb=\dimen138
+\pgf@xc=\dimen139
+\pgf@yc=\dimen140
+\w@pgf@writea=\write4
+\r@pgf@reada=\read2
+\c@pgf@counta=\count328
+\c@pgf@countb=\count329
+\c@pgf@countc=\count330
+\c@pgf@countd=\count331
+\t@pgf@toka=\toks30
+\t@pgf@tokb=\toks31
+\t@pgf@tokc=\toks32
+\pgf@sys@id@count=\count332
+ (c:/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2019/02/02 v3.1.1 (3.1.1)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2019/02/02 v3.1.1 (3.1.1)
+
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2019/02/02 v3.1.1 (3.1.1)
+)))
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgfsyssoftpath@smallbuffer@items=\count333
+\pgfsyssoftpath@bigbuffer@items=\count334
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2019/02/02 v3.1.1 (3.1.1)
+)) (c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2019/02/02 v3.1.1 (3.1.1)
+
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen141
+\pgfmath@count=\count335
+\pgfmath@box=\box34
+\pgfmath@toks=\toks33
+\pgfmath@stack@operand=\toks34
+\pgfmath@stack@operation=\toks35
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+.code.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+de.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)))
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count336
+))
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgf@picminx=\dimen142
+\pgf@picmaxx=\dimen143
+\pgf@picminy=\dimen144
+\pgf@picmaxy=\dimen145
+\pgf@pathminx=\dimen146
+\pgf@pathmaxx=\dimen147
+\pgf@pathminy=\dimen148
+\pgf@pathmaxy=\dimen149
+\pgf@xx=\dimen150
+\pgf@xy=\dimen151
+\pgf@yx=\dimen152
+\pgf@yy=\dimen153
+\pgf@zx=\dimen154
+\pgf@zy=\dimen155
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
+e.tex
+File: pgfcorepathconstruct.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgf@path@lastx=\dimen156
+\pgf@path@lasty=\dimen157
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
+x
+File: pgfcorepathusage.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgf@shorten@end@additional=\dimen158
+\pgf@shorten@start@additional=\dimen159
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgfpic=\box35
+\pgf@hbox=\box36
+\pgf@layerbox@main=\box37
+\pgf@picture@serial@count=\count337
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
+.tex
+File: pgfcoregraphicstate.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgflinewidth=\dimen160
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
+ode.tex
+File: pgfcoretransformations.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgf@pt@x=\dimen161
+\pgf@pt@y=\dimen162
+\pgf@pt@temp=\dimen163
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2019/02/02 v3.1.1 (3.1.1)
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2019/02/02 v3.1.1 (3.1.1)
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
+de.tex
+File: pgfcorepathprocessing.code.tex 2019/02/02 v3.1.1 (3.1.1)
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgfarrowsep=\dimen164
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgf@max=\dimen165
+\pgf@sys@shading@range@num=\count338
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2019/02/02 v3.1.1 (3.1.1)
+
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgfexternal@startupbox=\box38
+))
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2019/02/02 v3.1.1 (3.1.1)
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
+.tex
+File: pgfcoretransparency.code.tex 2019/02/02 v3.1.1 (3.1.1)
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2019/02/02 v3.1.1 (3.1.1)
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2019/02/02 v3.1.1 (3.1.1)
+))) (c:/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.te
+x
+File: pgfmoduleshapes.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgfnodeparttextbox=\box39
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2019/02/02 v3.1.1 (3.1.1)
+)
+(c:/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
+y
+Package: pgfcomp-version-0-65 2019/02/02 v3.1.1 (3.1.1)
+\pgf@nodesepstart=\dimen166
+\pgf@nodesepend=\dimen167
+)
+(c:/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
+y
+Package: pgfcomp-version-1-18 2019/02/02 v3.1.1 (3.1.1)
+)) (c:/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(c:/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(c:/texlive/2019/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2019/02/02 v3.1.1 (3.1.1)
+
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen168
+\pgffor@skip=\dimen169
+\pgffor@stack=\toks36
+\pgffor@toks=\toks37
+))
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2019/02/02 v3.1.1 (3.1.1)
+
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
+de.tex
+File: pgflibraryplothandlers.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgf@plot@mark@count=\count339
+\pgfplotmarksize=\dimen170
+)
+\tikz@lastx=\dimen171
+\tikz@lasty=\dimen172
+\tikz@lastxsaved=\dimen173
+\tikz@lastysaved=\dimen174
+\tikzleveldistance=\dimen175
+\tikzsiblingdistance=\dimen176
+\tikz@figbox=\box40
+\tikz@figbox@bg=\box41
+\tikz@tempbox=\box42
+\tikz@tempbox@bg=\box43
+\tikztreelevel=\count340
+\tikznumberofchildren=\count341
+\tikznumberofcurrentchild=\count342
+\tikz@fig@count=\count343
+
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgfmatrixcurrentrow=\count344
+\pgfmatrixcurrentcolumn=\count345
+\pgf@matrix@numberofcolumns=\count346
+)
+\tikz@expandcount=\count347
+
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2019/02/02 v3.1.1 (3.1.1)
+)))
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2019/02/02 v3.1.1 (3.1.1)
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package biblatex Info: Trying to load language 'italian'...
 Package biblatex Info: ... file 'italian.lbx' found.
+
 (c:/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
 File: italian.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
@@ -645,22 +905,22 @@ File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 (./Relazione.aux)
 \openout1 = `Relazione.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Info: Redefining \it@ocap on input line 101.
-LaTeX Info: Redefining \it@ccap on input line 101.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Info: Redefining \it@ocap on input line 104.
+LaTeX Info: Redefining \it@ccap on input line 104.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
@@ -670,17 +930,17 @@ Package caption Info: End \AtBeginDocument code.
 
 (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count328
-\scratchdimen=\dimen131
-\scratchbox=\box33
-\nofMPsegments=\count329
-\nofMParguments=\count330
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count331
-\MPscratchDim=\dimen132
-\MPnumerator=\count332
-\makeMPintoPDFobject=\count333
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count348
+\scratchdimen=\dimen177
+\scratchbox=\box44
+\nofMPsegments=\count349
+\nofMParguments=\count350
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count351
+\MPscratchDim=\dimen178
+\MPnumerator=\count352
+\makeMPintoPDFobject=\count353
+\everyMPtoPDFconversion=\toks39
 ) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -698,7 +958,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count334
+\c@lstlisting=\count354
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -708,32 +968,34 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Relazione.bbl' found.
 
 (./Relazione.bbl)
-Package biblatex Info: Reference section=0 on input line 101.
-Package biblatex Info: Reference segment=0 on input line 101.
-\AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 101.
+Package biblatex Info: Reference section=0 on input line 104.
+Package biblatex Info: Reference segment=0 on input line 104.
+\AtBeginShipoutBox=\box45
+Package hyperref Info: Link coloring OFF on input line 104.
  (c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count335
+\c@section@level=\count355
 )
-LaTeX Info: Redefining \ref on input line 101.
-LaTeX Info: Redefining \pageref on input line 101.
-LaTeX Info: Redefining \nameref on input line 101.
+LaTeX Info: Redefining \ref on input line 104.
+LaTeX Info: Redefining \pageref on input line 104.
+LaTeX Info: Redefining \nameref on input line 104.
 
 (./Relazione.out) (./Relazione.out)
-\@outlinefile=\write4
-\openout4 = `Relazione.out'.
+\@outlinefile=\write5
+\openout5 = `Relazione.out'.
 
-<Immagini/univpmlogo.png, id=80, 602.25pt x 602.25pt>
+ ABD: EveryShipout initializing macros
+<Immagini/univpmlogo.png, id=107, 602.25pt x 602.25pt>
 File: Immagini/univpmlogo.png Graphic file (type png)
 <use Immagini/univpmlogo.png>
-Package pdftex.def Info: Immagini/univpmlogo.png  used on input line 106.
+Package pdftex.def Info: Immagini/univpmlogo.png  used on input line 109.
 (pdftex.def)             Requested size: 77.99881pt x 77.99199pt.
- [1
+
+[1
 
 {c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Immagini/univ
 pmlogo.png>] (./Relazione.toc
@@ -747,25 +1009,24 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 7.
 (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
-\tf@toc=\write5
-\openout5 = `Relazione.toc'.
+\tf@toc=\write6
+\openout6 = `Relazione.toc'.
 
-
-(./Section/Introduzione.tex) (./Subsection/SVD.texpdfTeX warning (ext4): destin
-ation with the same identifier (name{page.1}) has been already used, duplicate 
-ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.10 \[
-        [1]) (./Subsection/One_Sided_Jacobi.tex [2] [3]) (./Subsection/CUDA.tex
-[4]
+l.131 \newpage
+               [1] (./Section/Introduzione.tex) (./Subsection/SVD.tex [2])
+(./Subsection/One_Sided_Jacobi.tex [3] [4]) [5] (./Section/CUDA.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
- (c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+
+(c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
-<Immagini/CUDA/Harvard_architecture.png, id=162, 275.52937pt x 175.40532pt>
+<Immagini/CUDA/Harvard_architecture.png, id=204, 275.52937pt x 175.40532pt>
 File: Immagini/CUDA/Harvard_architecture.png Graphic file (type png)
 <use Immagini/CUDA/Harvard_architecture.png>
 Package pdftex.def Info: Immagini/CUDA/Harvard_architecture.png  used on input 
@@ -775,97 +1036,86 @@ line 23.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5]
-<Immagini/CUDA/Execution_order_sequential.png, id=172, 280.04625pt x 85.82062pt
+[6]
+<Immagini/CUDA/Execution_order_sequential.png, id=214, 280.04625pt x 85.82062pt
 >
 File: Immagini/CUDA/Execution_order_sequential.png Graphic file (type png)
 <use Immagini/CUDA/Execution_order_sequential.png>
 Package pdftex.def Info: Immagini/CUDA/Execution_order_sequential.png  used on 
 input line 34.
 (pdftex.def)             Requested size: 195.0pt x 59.76103pt.
-<Immagini/CUDA/Execution_order_parallel.png, id=176, 293.59688pt x 190.46156pt>
+<Immagini/CUDA/Execution_order_parallel.png, id=218, 293.59688pt x 190.46156pt>
 
 File: Immagini/CUDA/Execution_order_parallel.png Graphic file (type png)
 <use Immagini/CUDA/Execution_order_parallel.png>
 Package pdftex.def Info: Immagini/CUDA/Execution_order_parallel.png  used on in
 put line 42.
 (pdftex.def)             Requested size: 195.0pt x 126.4984pt.
- [6 <./Immagini/CUDA/Harvard_architecture.png> <./Immagini/CUDA/Execution_order
+ [7 <./Immagini/CUDA/Harvard_architecture.png> <./Immagini/CUDA/Execution_order
 _sequential.png>]
-<Immagini/CUDA/Cuda_programming_structure.png, id=188, 238.64156pt x 127.22531p
+<Immagini/CUDA/Cuda_programming_structure.png, id=228, 238.64156pt x 127.22531p
 t>
 File: Immagini/CUDA/Cuda_programming_structure.png Graphic file (type png)
 <use Immagini/CUDA/Cuda_programming_structure.png>
 Package pdftex.def Info: Immagini/CUDA/Cuda_programming_structure.png  used on 
 input line 57.
 (pdftex.def)             Requested size: 292.5pt x 155.94844pt.
- [7 <./Immagini/CUDA/Execution_order_parallel.png>]
-[8 <./Immagini/CUDA/Cuda_programming_structure.png>]
-<Immagini/CUDA/GPU_Memory_Structure.png, id=207, 221.32687pt x 123.46124pt>
+ [8 <./Immagini/CUDA/Execution_order_parallel.png>]
+[9 <./Immagini/CUDA/Cuda_programming_structure.png>]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 91.
+<Immagini/CUDA/GPU_Memory_Structure.png, id=247, 221.32687pt x 123.46124pt>
 File: Immagini/CUDA/GPU_Memory_Structure.png Graphic file (type png)
 <use Immagini/CUDA/GPU_Memory_Structure.png>
 Package pdftex.def Info: Immagini/CUDA/GPU_Memory_Structure.png  used on input 
-line 118.
+line 121.
 (pdftex.def)             Requested size: 331.50238pt x 184.92952pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[9]
-<Immagini/CUDA/Thread_hierarchy.png, id=218, 285.31593pt x 265.74281pt>
+[10]
+<Immagini/CUDA/Thread_hierarchy.png, id=265, 285.31593pt x 265.74281pt>
 File: Immagini/CUDA/Thread_hierarchy.png Graphic file (type png)
 <use Immagini/CUDA/Thread_hierarchy.png>
 Package pdftex.def Info: Immagini/CUDA/Thread_hierarchy.png  used on input line
- 129.
+ 131.
 (pdftex.def)             Requested size: 272.99881pt x 254.27083pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10 <./Immagini/CUDA/GPU_Memory_Structure.png>] [11 <./Immagini/CUDA/Thread_Hie
+[11 <./Immagini/CUDA/GPU_Memory_Structure.png>] [12 <./Immagini/CUDA/Thread_Hie
 rarchy.png>]
-<Immagini/CUDA/GPU_Memory_Hierarchy.png, id=232, 322.95656pt x 357.58594pt>
+<Immagini/CUDA/GPU_Memory_Hierarchy.png, id=280, 322.95656pt x 357.58594pt>
 File: Immagini/CUDA/GPU_Memory_Hierarchy.png Graphic file (type png)
 <use Immagini/CUDA/GPU_Memory_Hierarchy.png>
 Package pdftex.def Info: Immagini/CUDA/GPU_Memory_Hierarchy.png  used on input 
-line 190.
+line 192.
 (pdftex.def)             Requested size: 272.99881pt x 302.2853pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12] [13 <./Immagini/CUDA/GPU_Memory_Hierarchy.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
-
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+[13] [14 <./Immagini/CUDA/GPU_Memory_Hierarchy.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 249--251
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
-[16]) [17] (./Section/Sequential.tex [18]
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 72.
- [19] [20]) [21]
-(./Section/Parallel.tex [22] [23] [24]) (./Subsection/Global_Memory.tex
-[25]) (./Subsection/Semi_Shared_Memory.tex [26])
-(./Subsection/Shared_Memory.tex [27]) [28] (./Section/Performance.tex
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 251--253
+
+ []
+
+[17]) [18] (./Section/Sequential.tex [19] [20] [21]) [22]
+(./Section/Parallel.tex [23] [24] [25]) (./Subsection/Global_Memory.tex
+[26]) (./Subsection/Semi_Shared_Memory.tex [27])
+(./Subsection/Shared_Memory.tex [28] [29]) [30] (./Section/Performance.tex
 Package epstopdf Info: Source file: <Grafici/Mean_Square_Error.eps>
 (epstopdf)                    date: 2020-03-25 09:26:49
 (epstopdf)                    size: 20257 bytes
@@ -877,7 +1127,7 @@ Package epstopdf Info: Source file: <Grafici/Mean_Square_Error.eps>
 eps-converted-to.pdf Grafici/Mean_Square_Error.eps>
 (epstopdf)             \includegraphics on input line 12.
 Package epstopdf Info: Output file is already uptodate.
-<Grafici/Mean_Square_Error-eps-converted-to.pdf, id=526, 421.575pt x 316.18124p
+<Grafici/Mean_Square_Error-eps-converted-to.pdf, id=586, 421.575pt x 316.18124p
 t>
 File: Grafici/Mean_Square_Error-eps-converted-to.pdf Graphic file (type pdf)
 <use Grafici/Mean_Square_Error-eps-converted-to.pdf>
@@ -895,7 +1145,7 @@ ed-to.pdf>
 Zoom-eps-converted-to.pdf Grafici/Mean_Square_Error_Zoom.eps>
 (epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
-<Grafici/Mean_Square_Error_Zoom-eps-converted-to.pdf, id=527, 421.575pt x 316.1
+<Grafici/Mean_Square_Error_Zoom-eps-converted-to.pdf, id=587, 421.575pt x 316.1
 8124pt>
 File: Grafici/Mean_Square_Error_Zoom-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -908,7 +1158,7 @@ Overfull \hbox (85.83618pt too wide) in paragraph at lines 12--14
  [][][][] 
  []
 
-[29 <./Grafici/Mean_Square_Error-eps-converted-to.pdf> <./Grafici/Mean_Square_E
+[31 <./Grafici/Mean_Square_Error-eps-converted-to.pdf> <./Grafici/Mean_Square_E
 rror_Zoom-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Grafici/ColumnsTime.eps>
 (epstopdf)                    date: 2020-03-25 09:26:49
@@ -920,7 +1170,7 @@ Package epstopdf Info: Source file: <Grafici/ColumnsTime.eps>
 nverted-to.pdf Grafici/ColumnsTime.eps>
 (epstopdf)             \includegraphics on input line 24.
 Package epstopdf Info: Output file is already uptodate.
-<Grafici/ColumnsTime-eps-converted-to.pdf, id=551, 421.575pt x 316.18124pt>
+<Grafici/ColumnsTime-eps-converted-to.pdf, id=610, 421.575pt x 316.18124pt>
 File: Grafici/ColumnsTime-eps-converted-to.pdf Graphic file (type pdf)
 <use Grafici/ColumnsTime-eps-converted-to.pdf>
 Package pdftex.def Info: Grafici/ColumnsTime-eps-converted-to.pdf  used on inpu
@@ -937,7 +1187,7 @@ pdf>
 ps-converted-to.pdf Grafici/ColumnsTime_Zoom.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
-<Grafici/ColumnsTime_Zoom-eps-converted-to.pdf, id=552, 421.575pt x 316.18124pt
+<Grafici/ColumnsTime_Zoom-eps-converted-to.pdf, id=611, 421.575pt x 316.18124pt
 >
 File: Grafici/ColumnsTime_Zoom-eps-converted-to.pdf Graphic file (type pdf)
 <use Grafici/ColumnsTime_Zoom-eps-converted-to.pdf>
@@ -949,7 +1199,7 @@ Overfull \hbox (85.83618pt too wide) in paragraph at lines 24--26
  [][][][] 
  []
 
-[30 <./Grafici/ColumnsTime-eps-converted-to.pdf> <./Grafici/ColumnsTime_Zoom-ep
+[32 <./Grafici/ColumnsTime-eps-converted-to.pdf> <./Grafici/ColumnsTime_Zoom-ep
 s-converted-to.pdf>]
 Package epstopdf Info: Source file: <Grafici/API_Profiling_Sequential.eps>
 (epstopdf)                    date: 2020-03-25 09:26:49
@@ -962,7 +1212,7 @@ rted-to.pdf>
 ential-eps-converted-to.pdf Grafici/API_Profiling_Sequential.eps>
 (epstopdf)             \includegraphics on input line 39.
 Package epstopdf Info: Output file is already uptodate.
-<Grafici/API_Profiling_Sequential-eps-converted-to.pdf, id=578, 421.575pt x 316
+<Grafici/API_Profiling_Sequential-eps-converted-to.pdf, id=636, 421.575pt x 316
 .18124pt>
 File: Grafici/API_Profiling_Sequential-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -981,7 +1231,7 @@ nverted-to.pdf>
 equential-eps-converted-to.pdf Grafici/Kernel_Profiling_Sequential.eps>
 (epstopdf)             \includegraphics on input line 41.
 Package epstopdf Info: Output file is already uptodate.
-<Grafici/Kernel_Profiling_Sequential-eps-converted-to.pdf, id=579, 421.575pt x 
+<Grafici/Kernel_Profiling_Sequential-eps-converted-to.pdf, id=637, 421.575pt x 
 316.18124pt>
 File: Grafici/Kernel_Profiling_Sequential-eps-converted-to.pdf Graphic file (ty
 pe pdf)
@@ -994,7 +1244,7 @@ Overfull \hbox (85.83618pt too wide) in paragraph at lines 39--41
  [][][][] 
  []
 
-[31 <./Grafici/API_Profiling_Sequential-eps-converted-to.pdf> <./Grafici/Kernel
+[33 <./Grafici/API_Profiling_Sequential-eps-converted-to.pdf> <./Grafici/Kernel
 _Profiling_Sequential-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Grafici/API_Profiling_Parallel_Global.eps>
 
@@ -1008,7 +1258,7 @@ converted-to.pdf>
 llel_Global-eps-converted-to.pdf Grafici/API_Profiling_Parallel_Global.eps>
 (epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
-<Grafici/API_Profiling_Parallel_Global-eps-converted-to.pdf, id=603, 421.575pt 
+<Grafici/API_Profiling_Parallel_Global-eps-converted-to.pdf, id=661, 421.575pt 
 x 316.18124pt>
 File: Grafici/API_Profiling_Parallel_Global-eps-converted-to.pdf Graphic file (
 type pdf)
@@ -1029,7 +1279,7 @@ arallel_Global-eps-converted-to.pdf Grafici/Kernel_Profiling_Parallel_Global.ep
 s>
 (epstopdf)             \includegraphics on input line 54.
 Package epstopdf Info: Output file is already uptodate.
-<Grafici/Kernel_Profiling_Parallel_Global-eps-converted-to.pdf, id=604, 421.575
+<Grafici/Kernel_Profiling_Parallel_Global-eps-converted-to.pdf, id=662, 421.575
 pt x 316.18124pt>
 File: Grafici/Kernel_Profiling_Parallel_Global-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1042,7 +1292,7 @@ Overfull \hbox (85.83618pt too wide) in paragraph at lines 52--54
  [][][][] 
  []
 
-[32 <./Grafici/API_Profiling_Parallel_Global-eps-converted-to.pdf> <./Grafici/K
+[34 <./Grafici/API_Profiling_Parallel_Global-eps-converted-to.pdf> <./Grafici/K
 ernel_Profiling_Parallel_Global-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Grafici/API_Profiling_Parallel_Semi_Shared
 .eps>
@@ -1057,7 +1307,7 @@ llel_Semi_Shared-eps-converted-to.pdf Grafici/API_Profiling_Parallel_Semi_Share
 d.eps>
 (epstopdf)             \includegraphics on input line 69.
 Package epstopdf Info: Output file is already uptodate.
-<Grafici/API_Profiling_Parallel_Semi_Shared-eps-converted-to.pdf, id=625, 421.5
+<Grafici/API_Profiling_Parallel_Semi_Shared-eps-converted-to.pdf, id=683, 421.5
 75pt x 316.18124pt>
 File: Grafici/API_Profiling_Parallel_Semi_Shared-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -1078,7 +1328,7 @@ arallel_Semi_Shared-eps-converted-to.pdf Grafici/Kernel_Profiling_Parallel_Semi
 _Shared.eps>
 (epstopdf)             \includegraphics on input line 71.
 Package epstopdf Info: Output file is already uptodate.
-<Grafici/Kernel_Profiling_Parallel_Semi_Shared-eps-converted-to.pdf, id=626, 42
+<Grafici/Kernel_Profiling_Parallel_Semi_Shared-eps-converted-to.pdf, id=684, 42
 1.575pt x 316.18124pt>
 File: Grafici/Kernel_Profiling_Parallel_Semi_Shared-eps-converted-to.pdf Graphi
 c file (type pdf)
@@ -1103,7 +1353,7 @@ converted-to.pdf>
 llel_Shared-eps-converted-to.pdf Grafici/API_Profiling_Parallel_Shared.eps>
 (epstopdf)             \includegraphics on input line 82.
 Package epstopdf Info: Output file is already uptodate.
-<Grafici/API_Profiling_Parallel_Shared-eps-converted-to.pdf, id=629, 421.575pt 
+<Grafici/API_Profiling_Parallel_Shared-eps-converted-to.pdf, id=687, 421.575pt 
 x 316.18124pt>
 File: Grafici/API_Profiling_Parallel_Shared-eps-converted-to.pdf Graphic file (
 type pdf)
@@ -1124,7 +1374,7 @@ arallel_Shared-eps-converted-to.pdf Grafici/Kernel_Profiling_Parallel_Shared.ep
 s>
 (epstopdf)             \includegraphics on input line 84.
 Package epstopdf Info: Output file is already uptodate.
-<Grafici/Kernel_Profiling_Parallel_Shared-eps-converted-to.pdf, id=630, 421.575
+<Grafici/Kernel_Profiling_Parallel_Shared-eps-converted-to.pdf, id=688, 421.575
 pt x 316.18124pt>
 File: Grafici/Kernel_Profiling_Parallel_Shared-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1137,35 +1387,35 @@ Overfull \hbox (85.83618pt too wide) in paragraph at lines 82--84
  [][][][] 
  []
 
-) [33 <./Grafici/API_Profiling_Parallel_Semi_Shared-eps-converted-to.pdf> <./Gr
-afici/Kernel_Profiling_Parallel_Semi_Shared-eps-converted-to.pdf>] [34 <./Grafi
+) [35 <./Grafici/API_Profiling_Parallel_Semi_Shared-eps-converted-to.pdf> <./Gr
+afici/Kernel_Profiling_Parallel_Semi_Shared-eps-converted-to.pdf>] [36 <./Grafi
 ci/API_Profiling_Parallel_Shared-eps-converted-to.pdf> <./Grafici/Kernel_Profil
-ing_Parallel_Shared-eps-converted-to.pdf>] (./Section/Conclusioni.tex) [35]
-Overfull \hbox (5.19456pt too wide) in paragraph at lines 172--172
+ing_Parallel_Shared-eps-converted-to.pdf>] (./Section/Conclusioni.tex) [37]
+Overfull \hbox (5.19456pt too wide) in paragraph at lines 178--178
 []\T1/cmr/m/n/12 R. I. Acosta-Quiñonez, D. Torres-Roman, R. Rodrìguez-Avila e D
 . Robles-
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
-[36]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
+[38]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
  (./Relazione.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
 Package rerunfilecheck Info: File `Relazione.out' has not changed.
-(rerunfilecheck)             Checksum: BB3171406D6B5A73B7429BD70F16C324;1274.
+(rerunfilecheck)             Checksum: 93272D42B97FEBDBFBB580A4A0E2B10D;1669.
 Package logreq Info: Writing requests to 'Relazione.run.xml'.
 \openout1 = `Relazione.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17971 strings out of 492623
- 291972 string characters out of 6133290
- 875545 words of memory out of 5000000
- 21308 multiletter control sequences out of 15000+600000
+ 27749 strings out of 492623
+ 504899 string characters out of 6133290
+ 1052526 words of memory out of 5000000
+ 30857 multiletter control sequences out of 15000+600000
  24485 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,11n,61p,1237b,2050s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,61p,1237b,1998s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
 ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2019/texmf-dist
@@ -1188,10 +1438,10 @@ ts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2019/texmf-dist/fonts/type1/p
 ublic/cm-super/sfrm1200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-s
 uper/sfrm1440.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1
 200.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb>
-Output written on Relazione.pdf (37 pages, 617376 bytes).
+Output written on Relazione.pdf (39 pages, 629396 bytes).
 PDF statistics:
- 821 PDF objects out of 1000 (max. 8388607)
- 710 compressed objects within 8 object streams
- 295 named destinations out of 1000 (max. 500000)
- 253 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 880 PDF objects out of 1000 (max. 8388607)
+ 767 compressed objects within 8 object streams
+ 312 named destinations out of 1000 (max. 500000)
+ 313 words of extra memory for PDF output out of 10000 (max. 10000000)
 

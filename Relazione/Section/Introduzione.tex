@@ -1,1 +1,9 @@
-Introduzione: descrizione del progetto
+La seguente tesina descrive il lavoro svolto per la progettazione di un algoritmo di One-sided Jacobi per la decomposizione in valori singolari (SVD) di una matrice, tramite librerie NVIDIA CUDA C. Il codice è stato testato e pensato per un sistema embedded Jetson TK1.
+
+La Jetson TK1 è una scheda embedded realizzato dalla NVIDIA che contiene un processore Tegra K1 SoC nella variante T124. Inoltre essa possiede un sistema operativo Ubuntu Linux. La versione di CUDA presente nel dispositivo era la 6.5, la quale ha limitato alcune scelte progettuali in quanto non consente la chiamata di kernel all'interno di altri kernel.
+
+In facoltà era già stato sviluppato un codice in C per la SVD ottimizzato per lavorare su CPU. Il nostro lavoro era quello di confrontare i nostri risultati con quelli precedentemente ottenuti e valutare la possibilità di una implementazione alternativa che sfruttasse appieno le potenzialità della GPU della Jetson.
+
+Come base per il nostro lavoro abbiamo studiato il linguaggio di programmazione e l'architetttura CUDA tramite \cite{Cheng:ProfessionalCudaProgramming} e \cite{Sanders:CudaByExample}. In seguito sono stati analizzati diversi articoli che descrivevano vari approcci per l'ottimizzazione dell'algoritmo su GPU, per poi realizzare la nostra versione, i cui risultati sono molto simili a quelli ottenuti negli articoli.
+
+Per lavorare sulla scheda abbiamo sfruttato il protocollo SSH dal dipartimento, in modo da poter connettersi alla scheda senza la necessità di spostarla. Alla fine della realizzazione del progetto non è però stato possibile accedere al dipartimento e quindi ai risultati esatti del tempo computazionale che necessita l'algoritmo. Abbiamo quindi usato come riferimento una NVIDIA GTX 610M, i cui risultati erano proporzionali a quelli ottenuti con la Jetson, anche se differenti.
