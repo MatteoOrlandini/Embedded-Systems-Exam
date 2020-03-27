@@ -122,7 +122,7 @@ Il modello di programmazione CUDA espone un'astrazione della gerarchia di memori
 	\caption{Struttura della memoria GPU \cite{Cheng:ProfessionalCudaProgramming}}
 	\label{fig:GPU_Memory_Structure}
 \end{figure}
-Una delle caratteristiche più notevoli del modello di programmazione CUDA è la gerarchia di memoria esposta. Ogni dispositivo GPU ha un set di diversi tipi di memoria utilizzati per scopi diversi. Un approfondimento su questa gerarchia è presente nel capitolo~~\ref{sec:CUDA Memory Model}. La global memory è analoga alla memoria di sistema della CPU, mentre la shared memory è simile alla cache della CPU. Tuttavia, lashared memory può essere controllata direttamente da un kernel CUDA C.
+Una delle caratteristiche più notevoli del modello di programmazione CUDA è la gerarchia di memoria esposta. Ogni dispositivo GPU ha un set di diversi tipi di memoria utilizzati per scopi diversi. Un approfondimento su questa gerarchia è presente nel capitolo~~\ref{sec:CUDA Memory Model}. La global memory è analoga alla memoria di sistema della CPU, mentre la shared memory è simile alla cache della CPU. Tuttavia, la shared memory può essere controllata direttamente da un kernel CUDA C.
 
 \subsection{Organizzazione dei thread}
 Quando un kernel viene avviata dal lato host, l'esecuzione viene spostata sul device in cui viene generato un numero elevato di thread e ogni thread esegue le istruzioni specificate dalla funzione kernel. Saper organizzare i thread è una parte fondamentale della programmazione CUDA che espone un'astrazione della gerarchia di thread per consentire di organizzare i thread. Questa è una gerarchia di thread a due livelli composta in blocchi di thread e griglie di blocchi, come mostrato in Figura~\ref{fig:Thread_hierarchy}.

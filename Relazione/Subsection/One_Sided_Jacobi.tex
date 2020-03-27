@@ -1,6 +1,8 @@
+\label{sec:OneSidedJacobi}
 Per effettuare la SVD di una matrice, sono stati sviluppati numerosi algoritmi con lo scopo di ottimizzare il numero di operazioni svolte dalla macchina.
 Uno di quelli più usati è l'algoritmo di Jacobi con la sua variante One Sided Jacobi. L'approccio utilizzato è quello di applicare successive rotazione alla matrice originale, in modo da azzerare le componenti che si trovino al di fuori della diagonale. Tramite diverse iterazioni, si ottiene come risultato finale una matrice diagonale contenente i valori singolari richiesti.
 \subsubsection{Jacobi rotation}
+\label{sec:Jacobi_rotation}
 La rotazione di Jacobi è una operazione che consente di azzerare selettivamente elementi specifici di una matrice. Tramite una rotazione in due dimensioni $p$ e $q$ vengono azzerati gli elementi $(p,q)$ e $(q,p)$ della matrice.
 
 L'operazione si basa sull'utilizzo della matrice di Jacobi $\mathbf{J}(p,q,\theta)$ del tipo:
@@ -35,7 +37,9 @@ Per una matrice $\mathbf{A}$ simmetrica, è possibile azzerare le componenti $(p
 \begin{equation}\label{jacrot}
 \mathbf{B}=\mathbf{J}(p,q,\theta)^T\mathbf{A}\mathbf{J}(p,q,\theta)
 \end{equation}
+
 \subsubsection{Algoritmo One Sided Jacobi}
+\label{sec:Algoritmo_One_Sided_Jacobi}
 L'idea base per questo algoritmo è quella di ruotare le colonne i e j di $\mathbf{A}$ per renderle ortogonali. In questo modo, le colonne i e j di $\mathbf{A}^T\mathbf{A}$ saranno implicitamente ortogonali.
 
 Sia $\mathbf{J}(p,q,\theta)$ la matrice di rotazione che, applicata ad $\mathbf{A}$, produce:
@@ -77,7 +81,7 @@ ottieniamo i valori di c e s che rappresentano coseno e seno nella matrice di ro
 \begin{equation}
 c=\frac{1}{\sqrt{1+t^2}},\quad s=ct
 \end{equation}
-Con c e s così calcolati, gli elementi $(B^TB)_{ij}$ e $(B^TB)_{ji}$ saranno uguali a zero.
+Con c e s così calcolati, gli elementi $(B^TB)_{ij}$ e $(B^TB)_{ji}$ saranno uguali a zero.\cite{Turchetti:SVDAlgorithms}
 
 
 

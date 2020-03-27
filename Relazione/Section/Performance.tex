@@ -1,7 +1,7 @@
-%Inserire grafici per i confronti
+\label{sec:Performance}
 Per testare gli algoritmi presentati nei capitoli~\ref{sec:Sequential},~\ref{sec:Global},~\ref{sec:Semi_Shared} e~\ref{sec:Shared} sono state usate 6 matrici generate con Matlab tramite la funzione \textit{rand} che restituisce un numero random distribuito uniformemente nell'intervallo $(0,1)$. Queste matrici hanno un aspect ratio, cioè il rapporto tra la larghezza (colonne) e l'altezza di una matrice, di $4:3$. Le matrici generate hanno 32, 48, 96, 128, 160 e 200 righe. 
 
-I grafici presentati in questo capitolo sono stati generati usando la GPU Nvidia GTX 610M poiché non era possibile usare la scheda JETSON per produrre i risultati.
+I grafici presentati in questo capitolo sono stati generati usando un pc con CPU Intel i7-3630 QM @2.40 GHz, 8GB di RAM e una GPU NVIDIA Geforce GTX 610M poiché non era possibile usare la scheda JETSON per produrre i risultati.
 
 I grafici~\ref{fig:Mean_Square_Error} e~\ref{fig:Mean_Square_Error_Zoom} mostrano come cambia l'errore quadratico medio dei valori singolari calcolati al variare dell'algoritmo One-Sided Jacobi usato e del numero di colonne della matrice usata. Il MSE è calcolato come 
 $$ \text{MSE} = \dfrac{1}{n} \sum_{i = 1}^{n} (Y_i - \hat{Y}_i)^2$$

@@ -1996,12 +1996,12 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">Cheng:ProfessionalCudaProgramming</bcf:citekey>
-    <bcf:citekey order="2">Cheng:ProfessionalCudaProgramming</bcf:citekey>
-    <bcf:citekey order="3">Cheng:ProfessionalCudaProgramming</bcf:citekey>
-    <bcf:citekey order="4">Cheng:ProfessionalCudaProgramming</bcf:citekey>
-    <bcf:citekey order="5">Cheng:ProfessionalCudaProgramming</bcf:citekey>
-    <bcf:citekey order="6">Cheng:ProfessionalCudaProgramming</bcf:citekey>
-    <bcf:citekey order="7">Cheng:ProfessionalCudaProgramming</bcf:citekey>
+    <bcf:citekey order="2">Sanders:CudaByExample</bcf:citekey>
+    <bcf:citekey order="3">Acosta:SVD</bcf:citekey>
+    <bcf:citekey order="4">Boukaram:SVD</bcf:citekey>
+    <bcf:citekey order="5">Lahabar:SVD</bcf:citekey>
+    <bcf:citekey order="6">Romer:SVD</bcf:citekey>
+    <bcf:citekey order="7">Turchetti:SVDAlgorithms</bcf:citekey>
     <bcf:citekey order="8">Cheng:ProfessionalCudaProgramming</bcf:citekey>
     <bcf:citekey order="9">Cheng:ProfessionalCudaProgramming</bcf:citekey>
     <bcf:citekey order="10">Cheng:ProfessionalCudaProgramming</bcf:citekey>
@@ -2009,14 +2009,22 @@
     <bcf:citekey order="12">Cheng:ProfessionalCudaProgramming</bcf:citekey>
     <bcf:citekey order="13">Cheng:ProfessionalCudaProgramming</bcf:citekey>
     <bcf:citekey order="14">Cheng:ProfessionalCudaProgramming</bcf:citekey>
-    <bcf:citekey order="15">Acosta:SVD</bcf:citekey>
-    <bcf:citekey order="16">Romer:SVD</bcf:citekey>
-    <bcf:citekey order="17">Acosta:SVD</bcf:citekey>
-    <bcf:citekey order="18">Romer:SVD</bcf:citekey>
-    <bcf:citekey order="19">Romer:SVD</bcf:citekey>
+    <bcf:citekey order="15">Cheng:ProfessionalCudaProgramming</bcf:citekey>
+    <bcf:citekey order="16">Cheng:ProfessionalCudaProgramming</bcf:citekey>
+    <bcf:citekey order="17">Cheng:ProfessionalCudaProgramming</bcf:citekey>
+    <bcf:citekey order="18">Cheng:ProfessionalCudaProgramming</bcf:citekey>
+    <bcf:citekey order="19">Cheng:ProfessionalCudaProgramming</bcf:citekey>
     <bcf:citekey order="20">Cheng:ProfessionalCudaProgramming</bcf:citekey>
-    <bcf:citekey order="21">Sanders:CudaByExample</bcf:citekey>
-    <bcf:citekey order="22">Boukaram:SVD</bcf:citekey>
+    <bcf:citekey order="21">Cheng:ProfessionalCudaProgramming</bcf:citekey>
+    <bcf:citekey order="22">Acosta:SVD</bcf:citekey>
+    <bcf:citekey order="23">Romer:SVD</bcf:citekey>
+    <bcf:citekey order="24">Acosta:SVD</bcf:citekey>
+    <bcf:citekey order="25">Romer:SVD</bcf:citekey>
+    <bcf:citekey order="26">Romer:SVD</bcf:citekey>
+    <bcf:citekey order="27">Cheng:ProfessionalCudaProgramming</bcf:citekey>
+    <bcf:citekey order="28">Sanders:CudaByExample</bcf:citekey>
+    <bcf:citekey order="29">Romer:SVD</bcf:citekey>
+    <bcf:citekey order="30">Boukaram:SVD</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
