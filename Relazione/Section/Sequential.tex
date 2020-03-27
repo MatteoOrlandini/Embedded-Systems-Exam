@@ -121,11 +121,11 @@ Si procede con il calcolo di \textit{c} e \textit{s} che rappresentano rispettiv
 
 Alle linee 24 e 25 si ruota la matrice moltiplicando opportunamente il contenuto dei puntatori \textit{pi} e \textit{pj} per \textit{c} e \textit{s}.
 
-Successivamente, nel programma viene richiamato il kernel \textit{computeSingVals} che effettua il calcolo dei valori singolari. Vengono usati un numero di blocchi pari a \textit{columns} e di threads pari a \textit{rows}, in modo che tramite l'indice del blocco e dei thread si possa accedere rispettivamente ad un j-esimo vettore colonna e ad un suo k-esimo elemento.
+Successivamente, nel programma viene richiamato il kernel \textit{computeSingVals} che effettua il calcolo dei valori singolari. 
 \begin{lstlisting}
 computeSingVals<<<columns, rows>>>(B, AUX1, rows, columns);
 \end{lstlisting}
-dove \textit{AUX1} è un array che contiene i valori singolari.
+Vengono usati un numero di blocchi pari a \textit{columns} e di threads pari a \textit{rows}, in modo che tramite l'indice del blocco e dei thread si possa accedere rispettivamente ad un j-esimo vettore colonna e ad un suo k-esimo elemento. La variabile \textit{AUX1} è un array che contiene i valori singolari.
 
 Il kernel \textit{computeSingVals} viene definito come
 \begin{lstlisting}[caption=Kernel per il calcolo dei valori singolari,label=code:computeSingVals]
@@ -143,4 +143,4 @@ __global__ void computeSingVals (float * B, float * AUX1, int rows, int columns)
 \end{lstlisting}
 La variabile 32-bit floating point \textit{t}, inizializzata a zero, contiene il quadrato della norma del vettore colonna j-esimo. 
 
-Per ottenere i valori singolari occorre fare la radice quadrata di \textit{t} tramite la funzione \textit{sqrtf}.
+Per ottenere i valori singolari occorre fare la radice quadrata di \textit{t} tramite la funzione \textit{sqrtf}. L'array \textit{AUX1} contiene i valori calcolati.
