@@ -1,6 +1,6 @@
 \label{sec:OneSidedJacobi}
 Per effettuare la SVD di una matrice, sono stati sviluppati numerosi algoritmi con lo scopo di ottimizzare il numero di operazioni svolte dalla macchina.
-Uno di quelli più usati è l'algoritmo di Jacobi con la sua variante One Sided Jacobi. L'approccio utilizzato è quello di applicare successive rotazione alla matrice originale, in modo da azzerare le componenti che si trovino al di fuori della diagonale. Tramite diverse iterazioni, si ottiene come risultato finale una matrice diagonale contenente i valori singolari richiesti.
+Uno di quelli più usati è l'algoritmo di Jacobi con la sua variante One Sided Jacobi. L'approccio utilizzato è quello di applicare successive rotazioni alla matrice originale, in modo da azzerare le componenti che si trovino al di fuori della diagonale. Tramite diverse iterazioni, si ottiene come risultato finale una matrice diagonale contenente i valori singolari richiesti.
 \subsubsection{Jacobi rotation}
 \label{sec:Jacobi_rotation}
 La rotazione di Jacobi è una operazione che consente di azzerare selettivamente elementi specifici di una matrice. Tramite una rotazione in due dimensioni $p$ e $q$ vengono azzerati gli elementi $(p,q)$ e $(q,p)$ della matrice.
@@ -27,7 +27,7 @@ allora
 \begin{eqnarray}
 y_p=cx_p-sx_q\\
 y_q=sx_p+cx_q\label{yq}\\
-y_i=x_i, i\neq p,q
+y_i=x_i, ~ i\neq p,q
 \end{eqnarray}
 Da \eqref{yq} si nota che $y_q$ può essere azzerata ponendo:
 \begin{equation}
@@ -53,7 +53,7 @@ b_{:j}=sa_{:i}+ca_{:j}
 \end{eqnarray}
 l'elemento $(B^TB)_{ij}$ sarà
 \[
-(B^TB)_{ij}=b_{:i}^Tb_{:j}=(ca_{:i}-sa{:j})^T(sa_{:i}+ca_{:j})
+(B^TB)_{ij}=b_{:i}^Tb_{:j}=(ca_{:i}-sa_{:j})^T(sa_{:i}+ca_{:j})
 \]
 assumendo $(B^TB)_{ij}=0,i\neq j$ si ottiene
 \[

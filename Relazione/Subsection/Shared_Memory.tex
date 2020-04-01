@@ -6,7 +6,7 @@ round <<<cols/2, rows, 2*rows*sizeof(float)>>> (dev_B, dev_v1, dev_v2, cols, row
 \end{lstlisting}
 Questo permette di allocare dinamicamente la memoria shared, che può essere utilizzata quando la quantità di memoria condivisa non è nota al momento della compilazione. In questo caso, la dimensione di allocazione della memoria shared per ogni blocco deve essere specificata (in byte) utilizzando un terzo parametro di configurazione come mostrato precedentemente.
 
-La memoria allocata corrisponde a \textit{2*rows*sizeof(float)} in quando ad ogni blocco viene assegnata una coppia di colonne. Ogni thread lavora su due elementi della coppia opportuna appartenenti alla riga corrispondente al thread.
+La memoria allocata corrisponde a \textit{2*rows*sizeof(float)} in quando ad ogni blocco viene assegnata una coppia di colonne. Ogni thread lavora su due elementi della coppia opportuna appartenenti alla riga corrispondente all'indice del thread.
 Mentre in precedenza le due colonne venivano modificate tramite puntatori, in questo caso vengono copiate nella memoria shared che richiede minor tempo di accesso per la lettura e la scrittura. La rotazione delle colonne viene quindi fatta internamente ad ogni blocco per poi trasferire di nuovo la variabile \textit{arr} in global, aggiornando la matrice originale.
 \begin{lstlisting}
 __global__ void round (float *B, int *v1, int *v2, int cols, int rows, bool * exit_flag) {

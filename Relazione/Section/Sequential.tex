@@ -65,7 +65,7 @@ La variabile \textit{iter} contiene le iterazioni necessarie per portare a termi
 
 \textit{host\_exit\_flag} contiene il flag che permettere di uscire dal ciclo \textbf{while} quando le colonne della matrice sono sufficientemente ortogonali.
 
-La coppia \textit{i} e \textit{j} rappresenta la coppia di colonne i-esima e j-esima che sta ruotando, \textit{B} contiene la matrice da cui estrarre i valori singolari.
+La coppia \textit{i} e \textit{j} rappresenta la coppia di colonne i-esima e j-esima che sta ruotando, \textit{B} contiene la matrice su cui applicare la One-Sided Jacobi, è salvata in column-major order e single-precision floating point.
 
 Il kernel \textit{rotate} esegue la One-Sided Jacobi rotation descritta nel capitolo~\ref{sec:OneSidedJacobi}. Per chiamare questa funzione, viene usato un solo blocco e un numero di threads pari a \textit{rows}, come si può vedere dalle parentesi angolari, in modo che tramite l'indice del thread si possa accedere al k-esimo elemento della coppia i-esima e j-esima di vettori colonna. Il kernel è definito come di seguito
 \begin{lstlisting}[numbers=left]
@@ -97,7 +97,7 @@ __global__ void rotate (float * B, int i, int j, int  rows, bool * exit_flag){
 	}
 }
 \end{lstlisting}
-Alla riga 3, le variabili \textit{alpha}, \textit{beta}, \textit{gamm}, \textit{limit}, \textit{tao}, \textit{t}, \textit{c} e \textit{s} con attributo \textit{\_\_shared} risiedono nella memoria shared in quanto sono comuni a tutti i threads del blocco.
+Alla riga 3, le variabili \textit{alpha}, \textit{beta}, \textit{gamm}, \textit{limit}, \textit{tao}, \textit{t}, \textit{c} e \textit{s} con attributo \textit{\_\_shared} risiedono nella memoria shared in quanto sono comuni a tutti i thread del blocco.
 
 Nella riga 6 si inizializzano le variabili \textit{alpha}, \textit{beta} e \textit{gamm} a zero. 
 

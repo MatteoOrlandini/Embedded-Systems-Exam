@@ -99,6 +99,8 @@
 \usepackage{tikz}
 \usetikzlibrary{positioning}
 
+\renewcommand{\lstlistingname}{Codice}
+
 \addbibresource{Bibliografia.bib}
 
 \begin{document}
@@ -111,15 +113,15 @@
 	\vspace{1cm}
 	{\scshape\Large Sistemi Embedded\par}
 	\vspace{1.5cm}
-	{\huge\bfseries Implementazione dell'algoritmo di One-Sided Jacobi Rotation per la decomposizione SVD, tramite librerie NVIDIA CUDA C (codice C) su piattaforma embedded Jetson TK1 (GPU). \par}
+	{\huge\bfseries Implementazione dell'algoritmo di One-Sided Jacobi Rotation per la decomposizione SVD tramite librerie NVIDIA CUDA C su piattaforma embedded Jetson TK1 (GPU). \par}
 	\vspace{2cm}
 	{\Large\itshape Matteo Orlandini \par}
 	{\Large\itshape Jacopo Pagliuca\par}
 	\vfill
-	supervisionato da\par
-	Dott. Laura \textsc{Falaschetti} e Prof. Claudio \textsc{Turchetti}
+	%supervisionato da\par
+	%Dott. Laura \textsc{Falaschetti} e Prof. Claudio \textsc{Turchetti}
 	
-	\vfill
+	%\vfill
 	
 	% Bottom of the page
 	{\large \today\par}
@@ -129,6 +131,7 @@
 \tableofcontents
 
 \newpage
+\setcounter{page}{1}
 \section{Introduzione}
 \input {Section/Introduzione}
 

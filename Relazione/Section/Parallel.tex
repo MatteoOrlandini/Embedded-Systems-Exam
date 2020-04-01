@@ -12,7 +12,7 @@ Le coppie di colonne per ciascun set vengono generate utilizzando un algoritmo d
 \end{center}
 In generale, ogni set contiene $\hat{n}/2$ coppie di colonne ortogonalizzate in parallelo, dove $\hat{n}$ è il prossimo numero intero pari maggiore o uguale a $n$. Se $n$ è dispari, quindi ogni set avrà una colonna accoppiata con una colonna "fittizia"; le coppie che contengono la colonna fittizia non sono ortogonali. In base a questo schema, sono necessari $\hat{n}/2 - 1$ set per completare una sweep completa.
 
-La coppia di colonne $(p', q')$ ortogonalizzata dalla $i-$esima rotazione in un set viene calcolata direttamente dalla coppia di colonne $(p, q)$ corrispondente ortogonalizzata dalla $i-$esima rotazione nel set precedente. In pratica, questo schema è più adatto per l'esecuzione su una GPU in cui la larghezza di banda di calcolo supera notevolmente la larghezza di banda di memoria. \cite{Romer:SVD}
+La coppia di colonne $(p', q')$ ortogonalizzata dalla i-esima rotazione in un set viene calcolata direttamente dalla coppia di colonne $(p, q)$ corrispondente ortogonalizzata dalla i-esima rotazione nel set precedente. In pratica, questo schema è più adatto per l'esecuzione su una GPU in cui la larghezza di banda di calcolo supera notevolmente la larghezza di banda di memoria. \cite{Romer:SVD}
 
 %Dal capitolo Parallel-Order Jacobi algorithm nell'articolo Acosta
 Nelle tradizionali implementazioni sequenziali dell'algoritmo Jacobi, il parallelismo non viene sfruttato, principalmente a causa della dipendenza dei dati di una rotazione con la sua precedente. L'algoritmo Jacobi parallelo sfrutta il massimo parallelismo per la decomposizione di una matrice simmetrica. Questo algoritmo richiede un numero di step pari a $n - 1$, in cui in ogni step si compiono $n/2$ rotazioni. Tutte le rotazioni all'interno di uno step possono essere eseguite in parallelo. \cite{Acosta:SVD}
@@ -39,7 +39,7 @@ La variabile \textit{set} rappresenta il round attuale dello scheduling round ro
 
 I vettori \textit{v1} e  \textit{v2} servono a rappresentare l'indice delle coppie di colonne della matrice da ruotare. Per ogni set gli elementi dei vettori con lo stesso indice rappresentano una coppia di colonne da ortogonalizzare mutualmente. L'aggiornamento dei vettori \textit{v1} e  \textit{v2} viene effettuato dal kernel \textit{scheduling}.
 
-Il kernel \textit{scheduling} ha lo scopo di ruotare i vettori \textit{v1} e  \textit{v2} ad ogni iterazione del ciclo in cui viene incrementato il valore di \textit{set}. Infatti, per effettuare l'algoritmo di round robin è sufficiente tenere fisso il primo elemento del primo vettore e routare gli altri come se fossero un unico vettore. Quindi, l'elemento 0 che rappresenta la prima colonna sarà sempre alla prima posizione del primo vettore. Gli altri elementi dello stesso vettore scorreranno verso destra, mentre il secondo vettore esegue uno shift verso sinistra. L'elemento uscente dal secondo vettore viene spostato nel posto vacante lasciato dall'elemento 1 di \textit{v1} mentre l'ultimo elemento del primo vettore diventa l'ultimo del secondo. Supponendo di avere una matrice con 6 colonne, gli array \textit{v1} e \textit{v2} contengono gli interi da 1 a 3 e da 4 a 6 rispettivamente. In questo caso, l'algoritmo di round robin è presentato nella figura~\ref{fig:Round_Robin}.
+Il kernel \textit{scheduling} ha lo scopo di modificare i vettori \textit{v1} e  \textit{v2} ad ogni iterazione del ciclo in cui viene incrementato il valore di \textit{set}. Infatti, per effettuare l'algoritmo di round robin è sufficiente tenere fisso il primo elemento del primo vettore e shiftare gli altri elementi come se fossero un unico vettore. Quindi, l'elemento 0 che rappresenta la prima colonna sarà sempre alla prima posizione del primo vettore. Gli altri elementi dello stesso vettore scorreranno verso destra, mentre il secondo vettore esegue uno shift verso sinistra. L'elemento uscente dal secondo vettore viene spostato nel posto vacante lasciato dall'elemento 1 di \textit{v1} mentre l'ultimo elemento del primo vettore diventa l'ultimo del secondo. Supponendo di avere una matrice con 6 colonne, gli array \textit{v1} e \textit{v2} contengono gli interi da 1 a 3 e da 4 a 6 rispettivamente. In questo caso, l'algoritmo di round robin è presentato nella figura~\ref{fig:Round_Robin}.
 \begin{figure}[H]
 	\centering
 	\subfloat[Step 1]{
@@ -140,7 +140,7 @@ Il kernel \textit{scheduling} ha lo scopo di ruotare i vettori \textit{v1} e  \t
 }
 \caption{Algoritmo Round Robin} \label{fig:Round_Robin}
 \end{figure}
-Ogni iterazione di questo algoritmo viene effettuata sul device. In questo modo, non ci sarà la necessità di copiare i vettori da host a device e viceversa. Il costo computazionale per lanciare un kernel compensa di gran lunga quello che sarebbe necessario per le \textit{cudaMemcpy}.
+Ogni iterazione di questo algoritmo viene effettuata sul device. In questo modo, non ci sarà la necessità di copiare i vettori da host a device e viceversa. Il costo computazionale per lanciare un kernel compensa di gran lunga quello che sarebbe necessario per la \textit{cudaMemcpy}.
 \begin{lstlisting}
 __global__ void scheduling (int *v1, int *v2, int cols){
 	int tmp = v2[0];
@@ -153,7 +153,7 @@ __global__ void scheduling (int *v1, int *v2, int cols){
 }
 \end{lstlisting}
 
-Il kernel \textit{round} ortogonalizza contemporaneamente ogni coppia di colonne in un set, usando una grid $n/2$ blocchi, dove $n$ è il numero di colonne della matrice. Per ogni set, l'm-esimo blocco è responsabile dell'ortogonalizzazione delle colonne $a_{pm}$ e $a_{qm}$, dove $(p_b, q_b)$ è l'm-esima coppia di colonne del set corrente.
+Il kernel \textit{round} ortogonalizza contemporaneamente ogni coppia di colonne in un set, usando una grid di $n/2$ blocchi, dove $n$ è il numero di colonne della matrice. Per ogni set, l'm-esimo blocco è responsabile dell'ortogonalizzazione delle colonne $b_{p_m}$ e $b_{q_m}$, dove $(p_m, q_m)$ è l'm-esima coppia di colonne del set corrente.
 
 Ogni blocco è composto da un numero di thread pari alle righe della matrice. Con un thread allocato per ogni elemento della coppia di vettori colonna, è possibile aggiornare ogni componente del vettore in parallelo, incrementando il parallelismo.\cite{Romer:SVD}
 

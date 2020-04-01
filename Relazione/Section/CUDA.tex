@@ -1,9 +1,7 @@
 %CUDA: spiegazione del funzionamento della GPU 
 %\fullcite{Cheng:ProfessionalCudaProgramming}
 \subsection{Calcolo parallelo}
-Negli ultimi decenni, c'è stato un crescente interesse per il calcolo parallelo. L'obiettivo primario del calcolo parallelo è migliorare la velocità di calcolo.
-
-Il calcolo parallelo può essere definito come una forma di calcolo in cui molte operazioni vengono eseguitie simultaneamente, in base al principio che spesso i problemi di grandi dimensioni possono essere suddivisi in problemi più piccoli, che vengono poi risolti contemporaneamente.
+Negli ultimi decenni, c'è stato un crescente interesse per il calcolo parallelo. L'obiettivo primario del calcolo parallelo è migliorare la velocità di computazione e può essere definito come una forma di calcolo in cui molte operazioni vengono eseguite simultaneamente, in base al principio che spesso i problemi di grandi dimensioni possono essere suddivisi in problemi più piccoli, che vengono poi risolti contemporaneamente.
 
 Dal punto di vista del programmatore, una domanda naturale è come mappare i calcoli simultanei sui computer. Supponendo di avere più risorse informatiche, il calcolo parallelo può quindi essere definito come l'uso simultaneo di più risorse di calcolo (core o computer) per eseguire i calcoli simultanei. Un grosso problema viene suddiviso in problemi più piccoli, ciascuno dei quali viene quindi risolto contemporaneamente su diverse risorse di elaborazione. Gli aspetti software e hardware del calcolo parallelo sono strettamente intrecciati insieme. In effetti, il calcolo parallelo di solito coinvolge due aree distinte delle tecnologie informatiche:
 \begin{itemize}
@@ -49,12 +47,12 @@ Il modello di programmazione CUDA consente di eseguire applicazioni su sistemi d
 	\item \textbf{Host}: la CPU e la sua memoria (host memory)
 	\item \textbf{Device}: la GPU e la sua memoria (device memory)
 \end{itemize}
-Un componente chiave del modello di programmazione CUDA è il kernel, cioè il codice che viene eseguito sul device GPU. CUDA gestisce i kernel scritti dai programmatori su thread GPU. Dall'host, si definisce il modo in cui l'algoritmo viene mappato sul device in base ai dati dell'applicazione e alla capacità del device GPU. 
+Un componente chiave del modello di programmazione CUDA è il kernel, cioè il codice che viene eseguito sul device GPU. CUDA gestisce i kernel scritti dai programmatori su thread GPU. Dall'host, si definisce il modo in cui l'algoritmo viene mappato sul device in base ai dati dell'applicazione e alla capacità del device. 
 
-L'host può funzionare indipendentemente dal dispositivo per la maggior parte delle operazioni. Quando si chiama un kernel, il controllo viene immediatamente restituito all'host, liberando la CPU per eseguire task aggiuntivi. Un tipico programma CUDA è costituito da un codice seriale integrato da un codice parallelo. Come mostrato in Figura~\ref{fig:Cuda_programming_structure}, il codice seriale (così come quello parallelo) viene eseguito sull'host, mentre il codice parallelo viene eseguito sul device. Il codice del device è scritto usando CUDA C. È possibile inserire tutto il codice in un singolo file sorgente oppure utilizzare più file sorgente per creare l'applicazione o le librerie. Il compilatore NVIDIA C (nvcc) genera il codice eseguibile sia per l'host che per il device.
+L'host può funzionare indipendentemente dal dispositivo per la maggior parte delle operazioni. Quando si chiama un kernel, il controllo viene immediatamente restituito all'host, liberando la CPU per eseguire task aggiuntivi. Un tipico programma CUDA è costituito da un codice seriale integrato da un codice parallelo. Come mostrato in Figura~\ref{fig:Cuda_programming_structure}, il codice seriale viene eseguito sull'host, mentre quello parallelo viene eseguito sul device. Il codice del device è scritto usando CUDA C. È possibile inserire tutto il codice in un singolo file sorgente oppure utilizzare più file sorgente per creare l'applicazione o le librerie. Il compilatore NVIDIA C (nvcc) genera il codice eseguibile sia per l'host che per il device.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.75\textwidth]{Immagini/CUDA/Cuda_programming_structure}
+	\includegraphics[width=.7\textwidth]{Immagini/CUDA/Cuda_programming_structure}
 	\caption{Struttura di programmazione Cuda \cite{Cheng:ProfessionalCudaProgramming}}
 	\label{fig:Cuda_programming_structure}
 \end{figure}
@@ -90,9 +88,9 @@ La funzione utilizzata per eseguire l'allocazione della memoria GPU è cudaMallo
 \begin{lstlisting}[label=code:cudaMalloc_def]
 cudaError_t cudaMalloc ( void** devPtr, size_t size )
 \end{lstlisting}
-Questa funzione alloca un intervallo lineare di memoria del dispositivo con la \emph{size} specificata in byte. La memoria allocata viene restituita tramite \emph{devPtr}. La somiglianza tra cudaMalloc e la libreria runtime standard malloc è intenzionale e ha lo scopo di mantenere l'interfaccia il più vicino possibile alle librerie di runtime C standard.
+Questa funzione alloca un intervallo lineare di memoria del dispositivo con la \textit{size} specificata in byte. La memoria allocata viene restituita tramite \textit{devPtr}. La somiglianza tra cudaMalloc e la libreria runtime standard malloc è intenzionale e ha lo scopo di mantenere l'interfaccia il più vicino possibile alle librerie di runtime C standard.
 
-La funzione utilizzata per trasferire i dati tra l'host e il device è: cudaMemcpy e la sua struttura è:
+La funzione utilizzata per trasferire i dati tra l'host e il device è cudaMemcpy e la sua struttura è:
 \begin{lstlisting}[label=code:cudaMemcpy_def]
 cudaError_t cudaMemcpy ( void* dst, const void* src, size_t count, cudaMemcpyKind kind )
 \end{lstlisting}
@@ -108,7 +106,7 @@ Questa funzione mostra un comportamento sincrono perché l'applicazione host si 
 \textit{cudaSuccess}\\
 Altrimenti, ritorna:
 
-\textit{cudaErrorMemoryAllocation}
+\textit{cudaErrorMemoryAllocation}\\
 È possibile convertire un codice di errore in un messaggio di errore human-readable con la seguente funzione di runtime CUDA:
 \begin{lstlisting}[label=code:cudaGetErrorString_def]
 char* cudaGetErrorString(cudaError_t error)
@@ -118,7 +116,7 @@ La funzione cudaGetErrorString è analoga alla funzione standard C strerror.
 Il modello di programmazione CUDA espone un'astrazione della gerarchia di memoria dall'architettura GPU. La Figura~\ref{fig:GPU_Memory_Structure} illustra una struttura di memoria GPU semplificata, contenente due ingredienti principali: global memory e shared memory. Un approfondimento sulla gerarchia di memoria della GPU è presente nel capitolo~\ref{sec:CUDA Memory Model}.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=.85\textwidth]{Immagini/CUDA/GPU_Memory_Structure}
+	\includegraphics[width=.75\textwidth]{Immagini/CUDA/GPU_Memory_Structure}
 	\caption{Struttura della memoria GPU \cite{Cheng:ProfessionalCudaProgramming}}
 	\label{fig:GPU_Memory_Structure}
 \end{figure}
@@ -129,15 +127,15 @@ Quando un kernel viene avviata dal lato host, l'esecuzione viene spostata sul de
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=.7\textwidth]{Immagini/CUDA/Thread_hierarchy}
-	\caption{Thread hierarchy \cite{Cheng:ProfessionalCudaProgramming}}
+	\caption{Gerarchia dei thread \cite{Cheng:ProfessionalCudaProgramming}}
 	\label{fig:Thread_hierarchy}
 \end{figure}
-Tutti i thread generati da un singolo lancio del kernel sono collettivamente chiamati griglia. Tutti i thread in una griglia condividono lo stesso spazio di global memory. Una griglia è composta da molti blocchi di thread. Un blocco thread è un gruppo di thread che possono cooperare tra loro usando:
+Tutti i thread generati da un singolo lancio del kernel sono collettivamente chiamati griglia. Tutti i thread in una griglia condividono lo stesso spazio di global memory. Una griglia è composta da molti blocchi di thread. Un blocco è un gruppo di thread che possono cooperare tra loro usando:
 \begin{itemize}
 	\item sincronizzazione dei blocchi locali
 	\item shared memory dei blocchi locali
 \end{itemize}
-Threads da blocchi diversi non possono cooperare. I threads si basano sulle seguenti due coordinate univoche per distinguersi l'una dall'altra:
+Thread di blocchi diversi non possono cooperare. I thread si basano sulle seguenti due coordinate univoche per distinguersi l'una dall'altra:
 \begin{itemize}
 	\item blockIdx (indice del blocco all'interno di una griglia)
 	\item threadIdx (indice del thread all'interno di un blocco)
@@ -193,7 +191,7 @@ La Figura~\ref{fig:GPU_Memory_Hierarchy} illustra la gerarchia di questi spazi d
 	\caption{Gerarchia della memoria della GPU \cite{Cheng:ProfessionalCudaProgramming}}
 	\label{fig:GPU_Memory_Hierarchy}
 \end{figure}
-Un thread in un kernel ha la sua local memory privata. Un blocco di thread ha una propria memoria shared, visibile a tutti i thread nello stesso blocco thread e il cui contenuto persiste per la durata del blocco thread. Tutti i thread possono accedere alla memoria globale. Esistono anche due spazi di memoria di sola lettura accessibili da tutti i thread: la memoria costante e texture. Gli spazi di memoria globale, costante e texture sono ottimizzati per usi diversi. La Texture memory offre diverse modalità di indirizzo. I contenuti della memoria globale, costante e texture hanno la stessa durata di un'applicazione.
+Un thread in un kernel ha la sua local memory privata. Un blocco di thread ha una propria memoria shared, visibile a tutti i thread nello stesso blocco thread e il cui contenuto persiste per la durata del blocco thread. Tutti i thread possono accedere alla memoria globale. Esistono anche due spazi di memoria di sola lettura accessibili da tutti i thread: la memoria costante e texture. Gli spazi di memoria globale, costante e texture sono ottimizzati per usi diversi. La texture memory offre diverse modalità di indirizzo. I contenuti della memoria globale, costante e texture hanno la stessa durata dell'applicazione.
 \subsubsection{Registri}
 I registri sono lo spazio di memoria più veloce su una GPU. Una variabile dichiarata in un kernel senza altri qualificatori di tipo viene generalmente memorizzata in un registro. Le matrici dichiarate in un kernel possono anche essere memorizzate in registri, ma solo se gli indici utilizzati per fare riferimento alla matrice sono costanti e possono essere determinati al momento della compilazione.
 
@@ -204,7 +202,7 @@ I registri sono risorse scarse che vengono suddivise tra gli warp attivi nella S
 \subsubsection{Local Memory}
 Le variabili in un kernel idonee per i registri ma che non possono rientrare nello spazio di registro allocato per quel kernel si riverseranno nella memoria locale. Le variabili che è probabile che il compilatore inserisca nella memoria locale sono:
 \begin{itemize}
-	\item Array locali referenziate con indici i cui valori non possono essere determinati in fase di compilazione.
+	\item Array locali referenziati con indici i cui valori non possono essere determinati in fase di compilazione.
 	\item Grandi strutture locali o array che consumerebbero troppo spazio sui registri.
 	\item Qualsiasi variabile che non rientra nel limite del registro del kernel.
 \end{itemize}
@@ -217,7 +215,7 @@ Le variabili con il seguente attributo in un kernel sono immagazzinate nella mem
 
 Poiché la shared memory è su chip, ha una larghezza di banda molto più elevata e una latenza molto inferiore rispetto alla memoria locale o globale. È usato in modo simile alla cache L1 della CPU, ma è anche programmabile.
 
-Ogni SM ha una quantità limitata di memoria condivisa che è partizionata tra i blocchi di thread. Pertanto, è necessario fare attenzione a non utilizzare eccessivamente la memoria condivisa o si limiterà inavvertitamente il numero di orditi attivi.
+Ogni SM ha una quantità limitata di memoria condivisa che è partizionata tra i blocchi di thread. Pertanto, è necessario fare attenzione a non utilizzare eccessivamente la memoria condivisa o si limiterà inavvertitamente il numero di warp attivi.
 
 La memoria condivisa è dichiarata nell'ambito di una funzione del kernel ma condivide la sua durata con un blocco di thread. Quando viene eseguito il blocco, la sua allocazione di memoria condivisa verrà rilasciata e assegnata ad altri blocchi thread.
 
@@ -225,7 +223,7 @@ La shared memory serve come mezzo di base per la comunicazione tra thread. I thr
 \begin{lstlisting}[label=code:syncthreads_def]
 void __syncthreads();
 \end{lstlisting}
-Questa funzione crea una barriera che tutti i thread nello stesso blocco di thread devono raggiungere prima di poter procedere con qualsiasi altro thread. Creando una barriera per tutti i thread all'interno di un blocco, è possibile prevenire un potenziale rischio di dati. Si verificano quando esiste un ordinamento indefinito di accessi multipli nella stessa posizione di memoria da thread diversi, in cui almeno uno di questi accessi è una scrittura. \_syncthreads può anche influire sulle prestazioni costringendo la SM a rimanere inattiva frequentemente.
+Questa funzione crea una barriera che tutti i thread nello stesso blocco di thread devono raggiungere prima di poter procedere con qualsiasi altro thread. Creando una barriera per tutti i thread all'interno di un blocco, è possibile prevenire un potenziale rischio di errore nei dati. Si verificano quando esiste un ordinamento indefinito di accessi multipli nella stessa posizione di memoria da thread diversi, in cui almeno uno di questi accessi è una scrittura. \_syncthreads può anche influire sulle prestazioni costringendo la SM a rimanere inattiva frequentemente.
 
 \subsubsection{Constant Memory}
 La memoria costante risiede nella memoria del device ed è memorizzata nella cache costante dedicata per la SM. Una variabile costante ha il seguente attributo:
@@ -234,7 +232,7 @@ La memoria costante risiede nella memoria del device ed è memorizzata nella cac
 
 Le variabili costanti devono essere dichiarate globalmente, al di fuori di qualsiasi kernel. È possibile dichiarare una quantità limitata di memoria costante: 64 KB. La memoria costante viene dichiarata staticamente ed è visibile a tutti i kernel.
 
-I kernel possono sololeggere  dalla memoria costante che deve quindi essere inizializzata dall'host utilizzando:
+I kernel possono solo leggere  dalla memoria costante che deve quindi essere inizializzata dall'host utilizzando:
 \begin{lstlisting}[label=code:cudaMemcpyToSymbol_def]
 cudaError_t cudaMemcpyToSymbol(const void* symbol, const void* src, size_t count);
 \end{lstlisting}
@@ -251,9 +249,9 @@ La memoria globale è la memoria più grande, a più alta latenza e più comunem
 Una variabile nella memoria globale può essere dichiarata staticamente o dinamicamente. Si può dichiarare staticamente una variabile globale nel codice del dispositivo usando il seguente qualificatore:
 \_\_device\_\_\\
 
-Nel Capitolo~\ref{sec:managing_memory}, si è definito come allocare dinamicamente la memoria globale dall'host utilizzando cudaMalloc e liberata utilizzando cudaFree. I puntatori alla memoria globale vengono quindi passati alle funzioni del kernel come parametri. Le allocazioni di memoria globale esistono per la durata di un'applicazione e sono accessibili a tutti i thread di tutti i kernel. È necessario prestare attenzione quando si accede alla memoria globale da più thread. Poiché non è possibile sincronizzare l'esecuzione di thread tra blocchi di thread, esiste il potenziale rischio che più thread in blocchi diversi modifichino contemporaneamente la stessa posizione nella memoria globale, il che porterà a un comportamento del programma indefinito.
+Nel Capitolo~\ref{sec:managing_memory}, si è definito come allocare dinamicamente la memoria globale dall'host utilizzando cudaMalloc e liberata utilizzando cudaFree. I puntatori alla memoria globale vengono quindi passati alle funzioni del kernel come parametri. Le allocazioni di memoria globale esistono per la durata dell'applicazione e sono accessibili a tutti i thread di tutti i kernel. È necessario prestare attenzione quando si accede alla memoria globale da più thread. Poiché non è possibile sincronizzare l'esecuzione di thread tra blocchi di thread, esiste il potenziale rischio che più thread in blocchi diversi modifichino contemporaneamente la stessa posizione nella memoria globale, il che porterà a un comportamento del programma indefinito.
 
-La memoria globale risiede nella memoria del dispositivo ed è accessibile tramite transazioni di memoria a 32, 64 o 128 byte. Queste transazioni devono essere allineate, cioè il primo indirizzo deve essere un multiplo di 32 byte, 64 byte o 128 byte. L'ottimizzazione delle transazioni di memoria è fondamentale per ottenere prestazioni ottimali. Quando un warp esegue una operazione load/store, il numero di transazioni richieste per soddisfare quella richiesta dipende in genere dai seguenti due fattori:
+La memoria globale risiede nella memoria del device ed è accessibile tramite transazioni di memoria a 32, 64 o 128 byte. Queste transazioni devono essere allineate, cioè il primo indirizzo deve essere un multiplo di 32 byte, 64 byte o 128 byte. L'ottimizzazione delle transazioni di memoria è fondamentale per ottenere prestazioni ottimali. Quando un warp esegue una operazione load/store, il numero di transazioni richieste per soddisfare quella richiesta dipende in genere dai seguenti due fattori:
 \begin{itemize}
 	\item Distribuzione degli indirizzi di memoria tra i thread del warp.
 	\item Allineamento degli indirizzi di memoria per transazione.

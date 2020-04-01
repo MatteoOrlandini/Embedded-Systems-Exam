@@ -1,9 +1,9 @@
 \label{sec:Conclusioni}
 Il modello di programmazione CUDA ha uno stile progettuale intrinseco che complica l'implementazione di \textit{round}. È impossibile sincronizzare l'esecuzione e le transazioni della memoria globale dei thread nei diversi blocchi all'interno di un kernel in esecuzione. Questo significa che alla fine di un set, quando il blocco $b_1$ scrive le colonne ortogonalizzate nella global memory, non c'è modo per garantire che il blocco $b_2$ vedrà e leggerà le colonne aggiornate all'inizio del set successivo.
 
-L'unico modo per i thread contenuti in diversi blocchi di sincronizzare e condividere i dati è di richiamare il kernel dopo che ogni blocco ha scritto i suoi risultati nella memoria globale. Ciò limita lo scopo di \textit{round} e forza l'host a richiamare il kernel una volta per set. Ciò comporta le seguenti conseguenze indesiderabili:
+L'unico modo per i thread contenuti in diversi blocchi di sincronizzare e condividere i dati è di richiamare il kernel dopo che ogni blocco ha scritto i suoi risultati nella memoria globale. Ciò limita lo scopo di \textit{round} e forza l'host a richiamare il kernel una volta per set. Questo comporta le seguenti conseguenze indesiderabili:
 \begin{itemize}
-	\item Per ogni esecuzione di \textit{round}, ogni blocco di thread deve leggere le colonne della matrice dalla memoria globale nella memoria condivisa o solo dalla memoria globale in base all'algoritmo implementato.
+	\item Per ogni esecuzione di \textit{round}, ogni blocco di thread deve leggere le colonne della matrice dalla memoria globale nella shared memory o solo dalla memoria globale in base all'algoritmo implementato.
 	
 	
 	Al contrario, se fosse possibile la sincronizzazione tra blocchi di thread, sarebbe possibile elaborare uno schema di partizionamento di coppie di colonne più efficiente. Un tale schema minimizzerebbe il numero di letture di memoria globale richieste da un blocco all'inizio di un nuovo set.
